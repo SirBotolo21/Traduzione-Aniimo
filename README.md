@@ -99,5 +99,6 @@ All'interno del repository trovi il file **[`GUIDA_GIOCO.md`](GUIDA_GIOCO.md)**,
 ---
 
 ## 📜 Note e Crediti
-* Traduzione e revisione a cura della community italiana.
+* **Traduzione e revisione a cura di**: **SirBotolo** (sirbotolos-crypto).
+* **Guida ufficiale al gioco a cura di**: **SirBotolo**.
 * Compatibile con la versione PC attuale di Aniimo.
