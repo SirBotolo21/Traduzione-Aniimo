@@ -72,20 +72,20 @@ if not exist "%FILES_DIR%\LuaScripts.xdf" (
 
 echo Applicazione dei file di traduzione italiana...
 
-:: 1. Mirror cvs/res/lua
+:: 1. Applicazione patch in cvs/res/lua (cartella attiva)
 copy /y "%FILES_DIR%\LuaScripts.xdf" "%GAME_DATA%\cvs\res\lua\LuaScripts.xdf" >nul
 copy /y "%FILES_DIR%\LuaScripts.xdt" "%GAME_DATA%\cvs\res\lua\LuaScripts.xdt" >nul
 if exist "%GAME_DATA%\cvs\res\lua\LuaScripts\Data\I18N" (
     copy /y "%FILES_DIR%\Compress_fr_FR.bin" "%GAME_DATA%\cvs\res\lua\LuaScripts\Data\I18N\Compress_fr_FR.bin" >nul
 )
 
-:: 2. Mirror StreamingAssets
-if exist "%GAME_DATA%\StreamingAssets\cvs\res\lua" (
-    copy /y "%FILES_DIR%\LuaScripts.xdf" "%GAME_DATA%\StreamingAssets\cvs\res\lua\LuaScripts.xdf" >nul
-    copy /y "%FILES_DIR%\LuaScripts.xdt" "%GAME_DATA%\StreamingAssets\cvs\res\lua\LuaScripts.xdt" >nul
-    if exist "%GAME_DATA%\StreamingAssets\cvs\res\lua\LuaScripts\Data\I18N" (
-        copy /y "%FILES_DIR%\Compress_fr_FR.bin" "%GAME_DATA%\StreamingAssets\cvs\res\lua\LuaScripts\Data\I18N\Compress_fr_FR.bin" >nul
-    )
+:: 2. Ripristino di sicurezza StreamingAssets (deve rimanere originale per superare l'integrity check del motore)
+if exist "%BACKUP_DIR%\LuaScripts.xdf" (
+    copy /y "%BACKUP_DIR%\LuaScripts.xdf" "%GAME_DATA%\StreamingAssets\cvs\res\lua\LuaScripts.xdf" >nul 2>&1
+    copy /y "%BACKUP_DIR%\LuaScripts.xdt" "%GAME_DATA%\StreamingAssets\cvs\res\lua\LuaScripts.xdt" >nul 2>&1
+)
+if exist "%GAME_DATA%\StreamingAssets\cvs\res\lua\LuaScripts" (
+    rmdir /s /q "%GAME_DATA%\StreamingAssets\cvs\res\lua\LuaScripts" >nul 2>&1
 )
 
 :: 3. Mirror patchv2 (se presente)
