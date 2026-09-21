@@ -1,458 +1,576 @@
-# ENCICLOPEDIA E GUIDA UFFICIALE COMPLETA DI ANIIMO (PC)
-### La Guida Integrale a Tutti i 3 Tipi di Missioni, Trama Principale, Segreti Regionali, Addestramento Elite, Meccaniche e Formule
-**Ideazione, Traduzione e Redazione Esclusiva a cura di: SirBotolo (SirBotolo21)**
+# ENCICLOPEDIA E GUIDA COMPLETA DI ANIIMO (PC)
+### La Guida Integrale a Tutte le Missioni, Trama Principale, Saghe Regionali, Creature, Elementi e Meccaniche
+**Ideazione, Traduzione e Redazione a cura di: SirBotolo (SirBotolo21)**
 
----
-
-## INTRODUZIONE GENERALE
-
-Benvenuto nell'enciclopedia completa e definitiva di **Aniimo**, redatta da **SirBotolo (SirBotolo21)** attraverso l'analisi diretta e l'estrazione di tutti i file di dati, dialoghi, script di intelligenza artificiale, requisiti di missione e formule del motore di gioco.
-
-Questa guida non è un semplice riassunto, ma il compendio totale strutturato specificamente attorno ai **3 rami ufficiali di missioni** previsti dal gioco, pensato per accompagnare il Pathfinder da semplice recluta ad Astra fino al dominio completo del continente di Idyll.
+> **Nota di attendibilità:** questa guida è stata redatta e verificata estraendo direttamente i dati reali del gioco (oltre 112.000 stringhe di localizzazione, 8.500 script del motore e tabelle di configurazione). Tutti i nomi di missioni, personaggi, creature e oggetti corrispondono esattamente alla versione italiana del gioco.
 
 ---
 
 ## INDICE GENERALE DELL'OPERA
 
-* [1. IL SISTEMA DELLE MISSIONI IN ANIIMO (I 3 TIPI DI MISSIONI)](#1-il-sistema-delle-missioni-in-aniimo-i-3-tipi-di-missioni)
+* [0. GUIDA RAPIDA — Come Iniziare](#0-guida-rapida--come-iniziare)
+* [1. IL SISTEMA DELLE MISSIONI IN ANIIMO](#1-il-sistema-delle-missioni-in-aniimo)
 * [2. GUIDA DETTAGLIATA TIPO 1: MISSIONI STORIA (STORY QUESTS / VIAGGIO)](#2-guida-dettagliata-tipo-1-missioni-storia-story-quests--viaggio)
   * [Prologo: L'Arrivo ad Astra, Piazza Orizzonte e l'Istituto Polaris](#prologo-larrivo-ad-astra-piazza-orizzonte-e-listituto-polaris)
-  * [Atto 1: Insieme ad Aniimo](#atto-1-insieme-ad-aniimo)
-  * [Atto 2: Un Raccolto più Ricco](#atto-2-un-raccolto-più-ricco)
-  * [Atto 3: Una Formula Tutta Nuova](#atto-3-una-formula-tutta-nuova)
+  * [Atto 1: Insieme ad Aniimo (Il Primo Legame Twine)](#atto-1-insieme-ad-aniimo-il-primo-legame-twine)
+  * [Atto 2: Un Raccolto più Ricco (Agricoltura Simbiotica)](#atto-2-un-raccolto-più-ricco-agricoltura-simbiotica)
+  * [Atto 3: Una Formula Tutta Nuova (Alchimia ed Esche)](#atto-3-una-formula-tutta-nuova-alchimia-ed-esche)
   * [Interludio: Story 3.5 — L'Enigma del Dr. Lewis](#interludio-story-35--lenigma-del-dr-lewis)
-  * [Atto 4: Tempo di Esplorare (Parte 1 e Parte 2)](#atto-4-tempo-di-esplorare-parte-1-e-parte-2)
-  * [Atto 5: Sistema di Controllo del Clima (Parte 1 e Parte 2)](#atto-5-sistema-di-controllo-del-clima-parte-1-e-parte-2)
+  * [Atto 4: Tempo di Esplorare (Torri delle Faglie e Dragon Bus)](#atto-4-tempo-di-esplorare-torri-delle-faglie-e-dragon-bus)
+  * [Atto 5: Sistema di Controllo del Clima (La Cupola e il Custode)](#atto-5-sistema-di-controllo-del-clima-la-cupola-e-il-custode)
   * [Atto 6: La Casa dei Sogni & Il Camper Prodigioso](#atto-6-la-casa-dei-sogni--il-camper-prodigioso)
   * [Atto 7: La Stagione del Festival di Astra](#atto-7-la-stagione-del-festival-di-astra)
-  * [Atto 8: Strutture, Ordini e Vita (Parte 1 e Parte 2)](#atto-8-strutture-ordini-e-vita-parte-1-e-parte-2)
-  * [Atto 9: Dono Fortunato (Lucky Gift)](#atto-9-dono-fortunato-lucky-gift)
-  * [Atto 10: Cielo Stellato e Fiori (Starry Sky and Flowers)](#atto-10-cielo-stellato-e-fiori-starry-sky-and-flowers)
-* [3. GUIDA DETTAGLIATA TIPO 2: MISSIONI AVVENTURA & INDIZI / VOCI DEL MONDO](#3-guida-dettagliata-tipo-2-missioni-avventura--indizi--voci-del-mondo)
+  * [Atto 8: Strutture, Ordini e Vita (La Grande Espansione)](#atto-8-strutture-ordini-e-vita-la-grande-espansione)
+  * [Atto 9: Dono Fortunato (L'Uovo Primordiale)](#atto-9-dono-fortunato-luovo-primordiale)
+  * [Atto 10: Cielo Stellato e Fiori (L'Ombra Primordiale)](#atto-10-cielo-stellato-e-fiori-lombra-primordiale)
+* [3. GUIDA DETTAGLIATA TIPO 2: MISSIONI AVVENTURA & SAGHE REGIONALI](#3-guida-dettagliata-tipo-2-missioni-avventura--saghe-regionali)
   * [Regione 1: Pianure Ventose (Breezy Plains)](#regione-1-pianure-ventose-breezy-plains)
-  * [Regione 2: Boschi di Rosetower (Rosetower Woods) & La Saga di Melloblum](#regione-2-boschi-di-rosetower-rosetower-woods--la-saga-di-melloblum)
-  * [Regione 3: Foresta Elettrica di Blitzwood & Una Risposta dal Cielo](#regione-3-foresta-elettrica-di-blitzwood--una-risposta-dal-cielo)
-  * [Regione 4: Prato di Driftwise (Driftwise Meadow) & Fentufts e i Nimbi](#regione-4-prato-di-driftwise-driftwise-meadow--fentufts-e-i-nimbi)
-  * [Regione 5: Approdo di Echoback (Echoback Landing) & Stelle e il Cavaliere](#regione-5-approdo-di-echoback-echoback-landing--stelle-e-il-cavaliere)
-  * [Regione 6: Altopiani Fulvi (Russet Highlands) & La Saga del Guerriero](#regione-6-altopiani-fulvi-russet-highlands--la-saga-del-guerriero)
-  * [Regione 7: Boschi Nebbiosi (Mistwoods) & Giuramento Vincolante](#regione-7-boschi-nebbiosi-mistwoods--giuramento-vincolante)
-  * [Regione 8: Valle Berillina & Foresta delle Stelle Cadenti](#regione-8-valle-berillina--foresta-delle-stelle-cadenti)
+  * [Regione 2: Boschi di Rosetower — La Saga Completa di Armand e Melloblum](#regione-2-boschi-di-rosetower--la-saga-completa-di-armand-e-melloblum)
+  * [Regione 3: Foresta Elettrica di Blitzwood — La Risposta Dorata](#regione-3-foresta-elettrica-di-blitzwood--la-risposta-dorata)
+  * [Regione 4: Prato di Driftwise — Fentufts e i Nimbi](#regione-4-prato-di-driftwise--fentufts-e-i-nimbi)
+  * [Regione 5: Approdo di Echoback — Sayn, il Faro e il Cavaliere](#regione-5-approdo-di-echoback--sayn-il-faro-e-il-cavaliere)
+  * [Regione 6: Altopiani Fulvi (Russet Highlands) — La Pittrice Sorora e il Guerriero](#regione-6-altopiani-fulvi-russet-highlands--la-pittrice-sorora-e-il-guerriero)
+  * [Regione 7: Boschi Nebbiosi (Mistwoods) — Le Spore di Tuckin Omega](#regione-7-boschi-nebbiosi-mistwoods--le-spore-di-tuckin-omega)
+  * [Regione 8: Foresta delle Stelle Cadenti & Valle Berillina](#regione-8-foresta-delle-stelle-cadenti--valle-berillina)
+  * [Regione 9: Cresta delle Zanne (Beast Fang Ridge) — La Leggenda Recas e Icho](#regione-9-cresta-delle-zanne-beast-fang-ridge--la-leggenda-recas-e-icho)
 * [4. GUIDA DETTAGLIATA TIPO 3: PROGRAMMA DI ADDESTRAMENTO ELITE](#4-guida-dettagliata-tipo-3-programma-di-addestramento-elite)
-  * [La Struttura dei 5 Dipartimenti Polaris](#la-struttura-dei-5-dipartimenti-polaris)
-  * [Dipartimento 1: Aniimologia (Cattura, Specie e Twine)](#dipartimento-1-aniimologia)
-  * [Dipartimento 2: Battle Arts (Combattimento, BREAK e Sanctum)](#dipartimento-2-battle-arts)
-  * [Dipartimento 3: Pathfinding (Esplorazione, Torri e Forzieri Voxel)](#dipartimento-3-pathfinding)
-  * [Dipartimento 4: Conoscenza del Mondo (Art of Living, Botanica e Cucina)](#dipartimento-4-conoscenza-del-mondo)
-  * [Dipartimento 5: Amministrazione & Dimora (Camper Park e Stelle dei Desideri)](#dipartimento-5-amministrazione--dimora)
-  * [I Corsi Pratici: Base, Fuoco, Acqua, Sinergia ed Estremo](#i-corsi-pratici-base-fuoco-acqua-sinergia-ed-estremo)
-* [5. MECCANICHE ESSENZIALI, SEGRETI & BESTIARIO DEI BOSS](#5-meccaniche-essenziali-segreti--bestiario-dei-boss)
-  * [Formula Matematica Esatta di Cattura con Aniipod](#formula-matematica-esatta-di-cattura-con-aniipod)
-  * [Il Legame Twine e la Traduzione dei Dialoghi Mostro](#il-legame-twine-e-la-traduzione-dei-dialoghi-mostro)
-  * [Elementi, Moltiplicatori e Finestra di Stordimento BREAK](#elementi-moltiplicatori-e-finestra-di-stordimento-break)
-  * [Flusso Prismatico e Comparsa degli Aniimo Stadio Nova](#flusso-prismatico-e-comparsa-degli-aniimo-stadio-nova)
-  * [Guida Strategica ai Boss: Omega Sherro, Tucking, Custode Climatico, Helgon](#guida-strategica-ai-boss)
-* [6. CREDITI ESCLUSIVI](#6-crediti-esclusivi)
+  * [I 5 Dipartimenti dell'Istituto Polaris](#i-5-dipartimenti-dellistituto-polaris)
+  * [Dipartimento 1: Aniimologia](#dipartimento-1-aniimologia)
+  * [Dipartimento 2: Battle Arts](#dipartimento-2-battle-arts)
+  * [Dipartimento 3: Pathfinding](#dipartimento-3-pathfinding)
+  * [Dipartimento 4: Conoscenza del Mondo (Art of Living)](#dipartimento-4-conoscenza-del-mondo-art-of-living)
+  * [Dipartimento 5: Amministrazione & Dimora](#dipartimento-5-amministrazione--dimora)
+  * [I Corsi Pratici: Sinergia, Fuoco, Acqua ed Estremo](#i-corsi-pratici-sinergia-fuoco-acqua-ed-estremo)
+* [5. GLI ELEMENTI E IL SISTEMA DI CONTROMOSSE (I 9 ELEMENTI)](#5-gli-elementi-e-il-sistema-di-contromosse-i-9-elementi)
+* [6. MECCANICHE ESSENZIALI, CATTURA E SEGRETI](#6-meccaniche-essenziali-cattura-e-segreti)
+* [7. BESTIARIO DEI BOSS (ALPHA, OMEGA E TITANI)](#7-bestiario-dei-boss-alpha-omega-e-titani)
+* [8. LE 12 REGIONI DI IDYLL](#8-le-12-regioni-di-idyll)
+* [9. BESTIARIO DELLE SPECIE ANIIMO](#9-bestiario-delle-specie-aniimo)
+* [10. COMANDI E CONTROLLI UFFICIALI (PC & CONTROLLER)](#10-comandi-e-controlli-ufficiali-pc--controller)
+* [11. PERSONAGGI PRINCIPALI](#11-personaggi-principali)
+* [12. GLOSSARIO DEI TERMINI](#12-glossario-dei-termini)
+* [13. DOMANDE FREQUENTI (FAQ)](#13-domande-frequenti-faq)
+* [14. NOTE E CREDITI](#14-note-e-crediti)
 
 ---
 
-# 1. IL SISTEMA DELLE MISSIONI IN ANIIMO (I 3 TIPI DI MISSIONI)
+# 0. GUIDA RAPIDA — Come Iniziare
 
-In Aniimo, premendo il pulsante del menu Missioni (tasto predefinito `J` su PC o `D-Pad Su` su controller), l'interfaccia si suddivide chiaramente in **tre schede distinte**, ciascuna con una logica di attivazione, tracciamento e ricompensa specifica:
+1. **Attivazione lingua**: Vai in Impostazioni di gioco $ightarrow$ Lingua $ightarrow$ seleziona **Français** (è lo slot su cui opera la traduzione italiana al 100%).
+2. **Accesso al diario**: Premi il tasto `J` (tastiera) oppure `D-Pad Su` (controller) per aprire la schermata delle missioni.
+3. **Primo obiettivo obbligatorio**: Completa il **Prologo** e l'**Atto 1** ad Astra per ricevere i primi **Aniipod** e sbloccare la sincronizzazione mentale **Twine**.
+4. **Tecnica di cattura ottimale**:
+   - Avvicinati in modalità furtiva (accovacciati nell'erba alta con `Z` o `Ctrl`).
+   - Posizionati **alle spalle** o **di lato** rispetto al bersaglio.
+   - Attendi che l'Aniimo sia intento a mangiare o dormire: l'anello del mirino diventerà verde.
+   - Con bersagli élite, riduci la guardia fino a mandare il nemico in **BREAK**: questo sblocca all'istante l'opzione di **Cattura Rapida**.
+5. **Vantaggio elementale**: Schiera sempre compagni che contrastano l'elemento avversario per svuotare la barra di guardia a velocità tripla.
+6. **Sblocco del mondo**: Completa gli Atti della Storia per rimuovere i blocchi regionali e attiva le **Torri delle Faglie (Vein Towers)** per dissolvere la nebbia cartografica.
 
-### Schema dei 3 Tipi di Missione:
+---
+
+# 1. IL SISTEMA DELLE MISSIONI IN ANIIMO
+
+L'interfaccia delle missioni di Aniimo organizza le attività in tre grandi categorie primarie, ciascuna collegata a specifici sistemi di progressione:
+
 ```text
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                       SISTEMA MISSIONI DI ANIIMO                            │
+│                     SISTEMA MISSIONI DI ANIIMO                              │
 ├──────────────────────────┬──────────────────────────┬───────────────────────┤
-│ TIPO 1: MISSIONI STORIA  │ TIPO 2: MISSIONI         │ TIPO 3: ADDESTRAMENTO │
-│    (Story / Viaggio)     │ AVVENTURA & INDIZI       │        ELITE          │
+│ TIPO 1: MISSIONI STORIA  │ TIPO 2: AVVENTURA &      │ TIPO 3: ADDESTRAMENTO │
+│    (Story / Viaggio)     │ INDIZI / VOCI DEL MONDO  │        ELITE          │
 ├──────────────────────────┼──────────────────────────┼───────────────────────┤
-│ • Icona: Sigillo Dorato  │ • Icona: Punto Blu/Verde │ • Icona: Emblema P.I. │
-│ • Filoni narrativi Atti  │ • Incarichi regionali    │ • 5 Dipartimenti      │
-│ • Sblocco aree e sistemi │ • Indagini e Voci Mondo  │ • Esami e brevetti    │
-│ • Obbligatorie per       │ • Forzieri, segreti, NPC │ • Requisito per rango │
-│   l'evoluzione del mondo │ • Libere ed opzionali    │ • Sfide e Sanctum     │
+│ • Sigillo Dorato         │ • Punto Blu / Verde      │ • Emblema Accademico  │
+│ • Atti narrativi 1–10    │ • Saghe regionali        │ • 5 Dipartimenti      │
+│ • Sblocco aree e camper  │ • Voci, segreti, indizi  │ • Esami e brevetti    │
+│ • Evoluzione del mondo   │ • Libere ed opzionali    │ • Requisito per rango │
 └──────────────────────────┴──────────────────────────┴───────────────────────┘
 ```
 
-1. **Tipo 1: Missioni Storia (Story Quests / Viaggio)**:
-   Rappresentano la spina dorsale della narrazione. Avanzano la trama del continente di Idyll, sbloccano l'accesso a nuove province, attivano le funzioni di base (come la costruzione della Dimora, l'uso del Camper e il controllo climatico) e permettono di incontrare i personaggi cardine dell'Istituto Polaris.
-2. **Tipo 2: Missioni Avventura & Indizi / Voci del Mondo (Adventure & Clue Quests / World Rumors)**:
-   Rappresentano il cuore esplorativo del mondo aperto. Sono le storie dei coloni di Idyll, le indagini botaniche dei profumieri di Bloomville, le leggende cavalleresche di Echoback, le tragedie familiari degli Altopiani e i misteri delle creature leggendarie. Spesso si attivano ascoltando pettegolezzi nelle piazze o trovando oggetti insoliti sul terreno.
-3. **Tipo 3: Programma di Addestramento Elite (Elite Training / Special Train)**:
-   Rappresentano il percorso di certificazione ufficiale dell'Istituto Polaris. Diviso in 5 dipartimenti accademici, richiede di dimostrare abilità concrete in cattura furtiva, rottura BREAK in combattimento, orientamento geografico, botanica applicata e gestione industriale della Dimora. Senza completare l'Addestramento Elite, il Pathfinder non può salire di rango né accedere ai contenuti avanzati.
+Nel motore di gioco (estratto da `QuestConst.lua`), le missioni sono gestite secondo precise categorie tecniche:
+- **MAIN**: Atti della Storia Principale (Viaggio del Pathfinder).
+- **SIDE**: Missioni Secondarie assegnate dagli abitanti dei villaggi e avamposti.
+- **CLUE**: Indizi del Mondo e Voci che guidano verso scoperte botaniche, storiche o creature leggendarie.
+- **COURSE**: Corsi pratici ed esercitazioni sul campo (Sinergia, Elementi, Vento).
+- **SPECIAL_TRAIN**: Addestramento Specialistico d'Élite dell'Istituto Polaris.
+- **HOMELAND**: Missioni di espansione della Dimora, gestione del Camper e ordini mercantili.
+- **DELEGATION**: Deleghe territoriali e incarichi a tempo.
 
 ---
 
 # 2. GUIDA DETTAGLIATA TIPO 1: MISSIONI STORIA (STORY QUESTS / VIAGGIO)
 
+La campagna principale accompagna il Pathfinder dal suo sbarco ad Astra fino al cuore dei misteri energetici di Idyll.
+
 ### Prologo: L'Arrivo ad Astra, Piazza Orizzonte e l'Istituto Polaris
-* **NPC Principali**: Margaret, Istruttore Bohr, Dr. Lewis.
-* **Luogo**: Astra, Piazza Orizzonte (*Horizon Square*).
-* **Guida Passo-Passo**:
-  1. Arrivato ad Astra, parla con Margaret all'arco di benvenuto. Ti spiegherà il ruolo del Pathfinder su Idyll.
-  2. Raggiungi il terminale centrale dell'Istituto Polaris e registra i tuoi dati biometrici.
-  3. L'Istruttore Bohr ti condurrà nella sala del modello olografico per spiegarti come le Faglie sotterranee canalizzano l'energia primordiale di Idyll.
-  4. Ricevi la tessera di identificazione provvisoria e l'autorizzazione a muoverti verso la frontiera meridionale.
+* **Personaggi**: Margaret, Istruttore Bohr, Dr. Lewis, Preside Oswen.
+* **Ambientazione**: Astra, Piazza Orizzonte (*Horizon Square*).
+* **Svolgimento passo-passo**:
+  1. All'arrivo ad Astra, parla con Margaret presso l'Arco di Benvenuto per ottenere le prime istruzioni sull'inquadramento nella spedizione.
+  2. Raggiungi il terminale centrale dell'Istituto Polaris e registra il tuo profilo biometrico da Pathfinder.
+  3. Segui l'Istruttore Bohr nella sala del modello olografico per comprendere la natura delle **Faglie (Veins)**, i canali energetici sotterranei che alimentano l'ecosistema di Idyll.
+  4. Incontra il Preside Oswen e il Dr. Lewis; ritira la tessera provvisoria e l'autorizzazione di transito per la frontiera sud.
 
 ---
 
-### Atto 1: Insieme ad Aniimo
-* **Obiettivo**: Eseguire la prima cattura e il primo legame mentale con un Aniimo.
-* **Luogo**: Pianure Ventose meridionali (*Breezy Plains*).
-* **Guida Passo-Passo**:
-  1. Recati all'armeria e ritira il tuo primo set di **Aniipod**.
-  2. Esci attraverso la Porta Sud di Astra.
-  3. Avvista il tuo primo bersaglio selvatico. Non correre: accovacciati nell'erba alta per non farti sentire.
-  4. Manovra per posizionarti **esattamente alle sue spalle**.
-  5. Quando il mirino circolare si chiude e diventa verde brillante, scaglia l'Aniipod.
-  6. Esegui la cerimonia del **Twine**: sincronizza la tua mente con l'Aniimo per sbloccare le sue abilità e ascoltare le sue prime parole tradotte!
+### Atto 1: Insieme ad Aniimo (Il Primo Legame Twine)
+* **Obiettivo**: Eseguire la prima cattura sul campo e stabilire la risonanza mentale.
+* **Ambientazione**: Pianure Ventose meridionali (*Breezy Plains*).
+* **Svolgimento passo-passo**:
+  1. Ritira la dotazione iniziale di **Aniipod Standard** presso l'armeria dell'avamposto.
+  2. Varcata la Porta Sud, individua il primo esemplare selvatico nelle radure pianeggianti.
+  3. Entra nell'erba alta premendo il tasto di furtività (`Z` / `Ctrl`) per azzerare il rumore dei passi.
+  4. Manovra per aggirare il bersaglio: posizionati **esattamente alle sue spalle** finché il mirino non si stringe con un bagliore verde.
+  5. Scaglia l'Aniipod con il tasto di lancio.
+  6. Esegui la cerimonia del **Twine**: armonizza la tua frequenza con la creatura per sbloccare le sue abilità attive e iniziare a comprenderne i dialoghi tradotti!
 * **Ricompense**: 100 Glimmer, 5 Aniipod Standard, Titolo "Compagno Fedele".
 
 ---
 
-### Atto 2: Un Raccolto più Ricco
-* **NPC**: Fattore Barnaby.
-* **Obiettivo**: Agricoltura simbiotica e gestione delle risorse vegetative.
-* **Guida Passo-Passo**:
-  1. Parla con Barnaby alle fattorie esterne di Astra.
-  2. Raccogli 5 campioni di sementi nutritive selvatiche lungo il fiume.
-  3. Entra nella serra di addestramento e posiziona un Aniimo di elemento Erba al campo. Noterai un incremento del **20%** nella rapidità di crescita.
-  4. Raccogli gli ortaggi maturi e consegnali alla mensa dei pionieri.
-* **Ricompense**: Kit Agricolo Portatile, Ricetta "Insalata Rinfrescante per Aniimo", 150 Glimmer.
+### Atto 2: Un Raccolto più Ricco (Agricoltura Simbiotica)
+* **Obiettivo**: Apprendere la coltivazione simbiotica con compagni di elemento Erba.
+* **Ambientazione**: Campi agricoli esterni di Astra.
+* **Svolgimento passo-passo**:
+  1. Raggiungi le coltivazioni esterne e parla con l'incaricato della sussistenza di Astra.
+  2. Esplora le sponde del fiume e raccogli 5 sementi vegetative ricche di nutrienti.
+  3. Accedi alla serra agricola e assegna un compagno di elemento **Erba** al lotto coltivato: la presenza simbiotica accelera la maturazione delle piante del **20%**.
+  4. Raccogli il grano maturo e consegnalo al centro di rifornimento dei coloni.
+* **Ricompense**: Kit Agricolo da Campo, Ricetta "Insalata Rinfrescante", 150 Glimmer.
 
 ---
 
-### Atto 3: Una Formula Tutta Nuova
-* **NPC**: Alchimista Elara.
-* **Obiettivo**: Distillazione, crafting ed esche speciali.
-* **Guida Passo-Passo**:
-  1. Raggiungi il laboratorio di Elara nel quartiere scientifico.
-  2. Recupera 3 gocce di rugiada elementale d'Acqua e 2 frammenti di roccia pirica nelle radure montane.
-  3. Usa il Banco Alchemico per distillare una Pozione Rigenerante EP e un'Esca Aromatica Selvaggia.
-  4. Piazza l'esca in una radura e nasconditi: attendi l'arrivo di un Aniimo curioso e catturalo.
-* **Ricompense**: Banco Alchemico da Viaggio, Ricettario Alchemico Liv. 1, 200 Glimmer.
+### Atto 3: Una Formula Tutta Nuova (Alchimia ed Esche)
+* **Obiettivo**: Distillazione alchemica e cattura mirata tramite esche.
+* **Ambientazione**: Laboratorio scientifico di Astra.
+* **Svolgimento passo-passo**:
+  1. Raggiungi il laboratorio chimico nel quartiere della ricerca.
+  2. Raccogli campioni di rugiada d'Acqua pura e frammenti rocciosi sulle alture adiacenti.
+  3. Utilizza il Banco Alchemico per distillare una **Pozione Rigenerante EP** e un'**Esca Aromatica Selvaggia**.
+  4. Posiziona l'esca in una radura appartata, nasconditi nei cespugli e attendi l'arrivo dell'esemplare attirato per effettuare una cattura indisturbata alle spalle.
+* **Ricompense**: Banco Alchemico Portatile, Ricettario di Base, 200 Glimmer.
 
 ---
 
 ### Interludio: Story 3.5 — L'Enigma del Dr. Lewis
-* **NPC**: Dr. Lewis.
-* **Luogo**: Rovine dell'Antico Canale.
-* **Guida Passo-Passo**:
-  1. Il Dr. Lewis ha individuato un forziere a combinazione voxel bloccato da 3 meccanismi ad ingranaggi di risonanza.
-  2. Allinea il primo ingranaggio girandolo in senso orario finché la luce blu non si accende.
-  3. Usa un Aniimo con abilità di fuoco per sciogliere i rampicanti che bloccano il secondo ingranaggio.
-  4. Attiva il terzo interruttore a pressione: il forziere arcano si aprirà rivelando la lente del navigatore.
-* **Ricompense**: Lente del Navigatore, 200 Glimmer.
+* **Personaggi**: Dr. Lewis.
+* **Ambientazione**: Rovine dell'Antico Canale.
+* **Svolgimento passo-passo**:
+  1. Il Dr. Lewis individua un forziere a combinazione voxel bloccato da 3 meccanismi a risonanza.
+  2. Ruota il primo ingranaggio in senso orario fino all'emissione del segnale luminoso azzurro.
+  3. Sfrutta un'abilità di Fuoco del compagno per incenerire i rampicanti spinosi che ostruiscono il secondo ingranaggio.
+  4. Premi l'interruttore a pressione per allineare l'ultimo segmento e sbloccare il forziere, recuperando la **Lente del Navigatore**.
+* **Ricompense**: Lente del Navigatore, Forziere dell'Enigma 3, 200 Glimmer.
 
 ---
 
-### Atto 4: Tempo di Esplorare (Parte 1 e Parte 2)
-* **Parte 1 (L'Inoltro Territoriale)**:
-  1. Oltrepassa la gola occidentale e individua la prima **Torre delle Faglie (Vein Tower)** spenta.
-  2. Ricarica il generatore d'antenna per dissolvere la nebbia cartografica della provincia.
-  3. Affronta l'imboscata dei predatori: sfrutta attacchi pesanti per svuotare la barra scudo ed entrare nella prima finestra di **BREAK**.
-* **Parte 2 (Le Rapide e il Trasporto)**:
-  1. Raggiungi le grandi rapide: evoca un compagno Acqua per trasportare la squadra sull'altra riva.
-  2. Attiva la stazione di sosta del **Dragon Bus** per sbloccare la rete di viaggio rapido tra Astra e le province esterne.
-* **Ricompense**: Mappa Regionale Estesa, Rete Dragon Bus Sbloccata, 250 Glimmer.
+### Atto 4: Tempo di Esplorare (Torri delle Faglie e Dragon Bus)
+* **Parte 1 (Attivazione della Torre)**:
+  1. Attraversa la gola occidentale e raggiungi la prima **Torre delle Faglie (Vein Tower)** inattiva.
+  2. Ricarica il generatore d'antenna per sintonizzare la frequenza geografica e dissolvere la nebbia cartografica della provincia.
+  3. Respingi l'assalto dei predatori d'ombra sfruttando attacchi combinati per svuotare la barra di guardia e mandare i nemici in **BREAK**.
+* **Parte 2 (La Rete Dragon Bus)**:
+  1. Raggiungi il corso delle rapide fluviali ed evoca un compagno d'Acqua per traghettare la squadra sulla sponda opposta.
+  2. Ripara e attiva la **Fermata del Dragon Bus**, sbloccando la rete di viaggio rapido permanente tra la capitale e le province periferiche.
+* **Ricompense**: Mappa Provinciale Sbloccata, Accesso alla rete Dragon Bus, 250 Glimmer.
 
 ---
 
-### Atto 5: Sistema di Controllo del Clima (Parte 1 e Parte 2)
-* **Parte 1 (L'Avaria della Stazione)**:
-  1. Raggiungi la grande cupola meteorologica nel cuore delle Pianure, colpita da un fulmine anomalo.
-  2. Disattiva manualmente le 3 bobine risonanti che scaricano elettricità sul terreno, muovendoti tra una scarica e l'altra.
-* **Parte 2 (Scontro con il Custode Meccanico)**:
-  1. Entra nel generatore centrale e affronta il Custode Meccanico corrotto.
-  2. *Tattica*: Quando carica il raggio laser, salta sulle pedane rialzate. Colpisci i condensatori laterali per mandarlo in BREAK ed esegui le mosse finali con la squadra.
-  3. Stabilizzato il clima, il Dr. Lewis autorizza ufficialmente l'accesso all'area di campeggio.
-* **Ricompense**: Componenti Meccanici del Camper, Documenti Ambientali, 300 Glimmer.
+### Atto 5: Sistema di Controllo del Clima (La Cupola e il Custode)
+* **Parte 1 (L'Anomalia Elettrica)**:
+  1. Raggiungi la grande cupola di monitoraggio atmosferico nelle Pianure, colpita da scariche energetiche anomale.
+  2. Disattiva manualmente le 3 bobine risonanti che disperdono archi elettrici, calcolando i tempi di scarica per muoverti in sicurezza.
+* **Parte 2 (Lo Scontro nel Generatore)**:
+  1. Accedi alla camera del generatore centrale e affronta il nucleo meccanico sovraccarico.
+  2. *Tattica*: Quando il terreno si carica di elettricità, sfrutta le piattaforme metalliche sopraelevate. Colpisci i condensatori di raffreddamento con abilità di elemento Terra per indurre lo stato di BREAK e scatenare le abilità supreme.
+  3. Ripristinata la stabilità climatica, il Dr. Lewis rilascia il permesso per l'insediamento del campeggio.
+* **Ricompense**: Componenti Motore per Camper, Documenti di Bonifica, 300 Glimmer.
 
 ---
 
 ### Atto 6: La Casa dei Sogni & Il Camper Prodigioso
-* **Parte 1 (Sblocco Dimora e Camper)**:
-  1. Ricevi la concessione per la tua **Dimora (Home)** personale e il **Parco Camper (RV Park)**.
-  2. Posiziona l'edificio residenziale nell'area designata.
-* **Parte 2 (Installazione Moduli e Prime Stelle)**:
-  1. Alloggia i primi 5 compagni Aniimo nella Dimora.
-  2. Installa il **Modulo Riposo** sul Camper per incrementare la rigenerazione di Stamina del 20%.
-  3. Fabbrica il **Modulo Cucina Liv. 1** e il **Modulo Ecologico Liv. 1**.
-  4. Avvia la produzione continua e raccogli le tue prime **Stelle dei Desideri (Wish Stars)**.
-* **Ricompense**: Titolo "Padrone di Casa", Licenza Edilizia Liv. 1, 500 Glimmer.
+* **Obiettivo**: Fondazione della base operativa e sviluppo tecnologico del Camper.
+* **Svolgimento passo-passo**:
+  1. Ricevi la concessione per la tua **Dimora (Home)** personale e il relativo **Parco Camper (RV Park)**.
+  2. Alloggia i primi 5 compagni Aniimo nelle strutture residenziali.
+  3. Fabbrica e installa sul Camper il **Modulo Riposo** (+20% rigenerazione Stamina durante i viaggi).
+  4. Costruisci il **Modulo Cucina Liv. 1** e il **Modulo Ecologico Liv. 1** per convertire materie prime in provviste ed estratti.
+  5. Avvia i cicli di produzione e accumula le prime **Stelle dei Desideri (Wish Stars)**.
+* **Ricompense**: Titolo "Padrone di Casa", Concessione Edilizia Liv. 1, 500 Glimmer.
 
 ---
 
 ### Atto 7: La Stagione del Festival di Astra
-* **Prerequisiti**: Livello Pathfinder 18; Atto 6 completato.
-* **Guida Passo-Passo**:
-  1. Torna ad Astra durante i festeggiamenti annuali.
-  2. Competi e vinci nelle 3 prove della piazza:
-     * *Corsa degli Aniimo*: Mantieni la scia sui binari di spinta;
-     * *Bersaglio Mobile con Aniipod*: Totalizza almeno 1.000 punti colpendo i manichini da tergo;
-     * *Esame di Aniimologia con l'Istruttore Bohr*: Rispondi a 5 domande teoriche sui tipi elementali e debolezze.
-  3. Incontra i delegati forestali di Bloomville e accetta l'invito a visitare i Boschi di Rosetower.
-* **Ricompense**: Costume Esclusivo del Festival, Spilla d'Oro di Astra, 500 Glimmer.
+* **Prerequisiti**: Completamento dell'Atto 6 e sviluppo base del Camper.
+* **Svolgimento passo-passo**:
+  1. Rientra ad Astra durante la celebrazione annuale del Festival.
+  2. Partecipa e supera le 3 prove cerimoniali di Piazza Orizzonte:
+     * *Corsa di Precisione*: Mantieni la scia lungo i corridoi di spinta e supera gli ostacoli a tempo.
+     * *Tiro al Bersaglio Mobile con Aniipod*: Totalizza almeno 1.000 punti colpendo i manichini da tergo.
+     * *Esame di Aniimologia dell'Istruttore Bohr*: Rispondi a 5 quesiti sulle affinità e contromosse elementali.
+  3. Accogli i delegati profumieri di Bloomville e ricevi l'invito formale a esplorare i Boschi di Rosetower.
+* **Ricompense**: Abito Tradizionale del Festival, Spilla Commemorativa d'Oro, 500 Glimmer.
 
 ---
 
-### Atto 8: Strutture, Ordini e Vita (Parte 1 e Parte 2)
-* **Parte 1 (Espansione a 24 Posti)**:
-  1. Espandi la planimetria della Dimora fino a ospitare la capienza massima di **24 Aniimo contemporanei**.
-  2. Consulta la bacheca degli ordini mercantili e smista il lavoro tra agricoltori, cuochi ed erboristi.
-* **Parte 2 (Moduli al Livello Massimo)**:
-  1. Raccogli le risorse e potenzia il **Rilevatore di Risorse al Liv. 2** (radar forzieri nel raggio di 100 metri).
-  2. Potenzia il **Modulo Cucina al Liv. 3** e il **Modulo Ecologico al Liv. 3**.
-  3. Scambia 10.000 Stelle dei Desideri con il Mercante d'Arte di Astra per ottenere decorazioni monumentali.
-* **Ricompense**: Espansione Territorio Dimora, Mobili Reali, 600 Glimmer.
+### Atto 8: Strutture, Ordini e Vita (La Grande Espansione)
+* **Parte 1 (Espansione Dimora a 24–40 Posti)**:
+  1. Amplia la planimetria della Dimora per accogliere fino a 24 compagni contemporanei (espandibile a 40 ai livelli superiori).
+  2. Accedi alla bacheca degli ordini mercantili e organizza i turni di lavoro tra raccoglitori, cuochi e specialisti ecologici.
+* **Parte 2 (Potenziamento Tecnologico Moduli)**:
+  1. Potenzia il **Rilevatore di Risorse al Liv. 4** (scansione automatica di forzieri e giacimenti entro 100 metri).
+  2. Porta il **Modulo Cucina al Liv. 5** e il **Modulo Ecologico al Liv. 5**.
+  3. Scambia le Stelle dei Desideri accumulate con il Mercante d'Arte per decorazioni monumentali e strutture produttive avanzate.
+* **Ricompense**: Espansione Territorio Dimora, Licenza Tecnologica Avanzata, 600 Glimmer.
 
 ---
 
-### Atto 9: Dono Fortunato (Lucky Gift)
-* **Guida Passo-Passo**:
-  1. Il Dr. Lewis ti affida un uovo antichissimo preservato in una capsula stagna.
-  2. Viaggia fino alle gole geotermiche degli Altopiani e individua una sorgente calda a temperatura ottimale.
-  3. Costruisci il nido d'incubazione e proteggilo per 3 minuti dalle ondate di predatori montani attratti dal calore.
-  4. L'uovo si schiude: risvegli un compagno raro dotato di statistiche genetiche perfette e doppio slot passivo.
-* **Ricompense**: Aniimo Raro Schiuso, Amuleto della Nascita, 700 Glimmer.
+### Atto 9: Dono Fortunato (L'Uovo Primordiale)
+* **Svolgimento passo-passo**:
+  1. Il Dr. Lewis ti affida un uovo antico sigillato in una capsula di contenimento criogenico.
+  2. Intraprendi il viaggio verso le gole geotermiche degli Altopiani e individua una conca termale a temperatura costante.
+  3. Allestisci il nido d'incubazione termica e difendilo per 3 minuti consecutivi dalle ondate di predatori montani attratti dall'emanazione calorica.
+  4. L'uovo si schiude rivelando una creatura dotata di geni con potenziale Perfetto e doppio slot passivo sbloccato.
+* **Ricompense**: Compagno Schiuso a Potenziale Perfetto, Amuleto della Nascita, 700 Glimmer.
 
 ---
 
-### Atto 10: Cielo Stellato e Fiori (Starry Sky and Flowers)
-* **Guida Passo-Passo**:
-  1. Durante la congiunzione astrale, scala la vetta più alta del continente sopra la cupola di Astra.
-  2. Assisti all'apertura dell'aurora prismatica e combatti la **Manifestazione dell'Ombra Primordiale**.
-  3. *Tattica*: Alterna abilità di elemento Luce per strappare lo scudo spettrale dell'Ombra. Quando entra in BREAK, scatena le mosse finali combinate di tutta la squadra.
-  4. Purifica il sigillo dell'Oblio: i fiori celesti cadono su Idyll, inaugurando l'era di pace tra umani e Aniimo.
-* **Ricompense**: Titolo Onorario "Pioniere delle Stelle", **Aniipod Leggendario**, Trofeo Finale della Campagna.
+### Atto 10: Cielo Stellato e Fiori (L'Ombra Primordiale)
+* **Svolgimento passo-passo**:
+  1. Durante la convergenza astrale, scala la vetta più alta del massiccio montuoso sopra Astra.
+  2. Assisti all'apertura della frattura e affronta la **Manifestazione dell'Ombra Primordiale**.
+  3. *Tattica*: L'Ombra è protetta da un velo di Oscurità assoluta. Schiera compagni di elemento **Luce** per sgretolare lo scudo. Quando entra nello stato di BREAK, scatena le abilità supreme e le mosse combinate per purificare il nucleo prima che ricarichi il campo di forza.
+  4. Ripristinato l'equilibrio delle Faglie, la fioritura celeste avvolge Idyll, inaugurando l'era di cooperazione tra umani e Aniimo.
+* **Ricompense**: Titolo Onorario "Pioniere delle Stelle", **Aniipod Leggendario**, Trofeo della Campagna.
 
 ---
 
-# 3. GUIDA DETTAGLIATA TIPO 2: MISSIONI AVVENTURA & INDIZI / VOCI DEL MONDO
+# 3. GUIDA DETTAGLIATA TIPO 2: MISSIONI AVVENTURA & SAGHE REGIONALI
+
+Le saghe regionali raccontano le vicende storiche, i personaggi e i misteri delle province di Idyll.
 
 ### Regione 1: Pianure Ventose (Breezy Plains)
-* **Petali alla Deriva**:
-  * *Incarico*: 20 petali misteriosi fluttuano trasportati dalle brezze. Raccoglili tutti lungo i declivi per aiutare l'Istituto Polaris a catalogare la fioritura. Ricompensa: 100 Glimmer ed erbe curative.
-* **Il Sospiro del Vento**:
-  * *Puzzle*: Raggiungi i 3 mulini a vento storici. Ruota le vele per allinearle con la breccia della collina: la rotazione corretta aprirà la botola verso un forziere voxel contenente una Runa d'Attacco rara.
+* **Petali alla Deriva**: 20 petali rari trasportati dai venti di faglia galleggiano sui pendii. Raccoglili tutti per permettere all'Istituto Polaris di mappare le correnti di fioritura.
+* **Il Segreto dei Tre Mulini**: Raggiungi i mulini storici e orienta le pale seguendo la direzione del vento montano per aprire l'accesso alla camera sotterranea con forziere voxel.
+* **L'Incontro con Cecelia**: Sfida e sconfiggi Cecelia per dimostrare la tua padronanza del territorio e ottenere indicazioni su giacimenti e passaggi montani.
 
 ---
 
-### Regione 2: Boschi di Rosetower (Rosetower Woods) & La Saga di Melloblum
-* **La Danza della Rosa Whitesnow & La Leggenda di Armand**:
-  * *Contesto Storico*: Il naturalista Armand si addentrò nei boschi di Beardow e incontrò la gentile **Principessa Melloblum** e i suoi **Sette Budsquire** (Germoglieri). La rozza e territoriale famiglia dei Cubbo minacciava di cacciare tutti. Quando il germoglio sacro sbocciò in una rosa bianca purissima, Melloblum eseguì una danza miracolosa che toccò il cuore perfino dei Cubbo, portando pace e ribattezzando la foresta "Rosetower Woods".
-  * *Passaggi della Missione*:
-    1. Trova i 6 germogli dorati nascosti sui rami della torre bianca;
-    2. Suona la campana di cristallo all'ingresso della radura;
-    3. Assisti alla rievocazione della danza di Melloblum;
-    4. Ricevi il prezioso amuleto **Spina di Rosa** (+15% danni Elemento Erba per l'intera squadra).
+### Regione 2: Boschi di Rosetower — La Saga Completa di Armand e Melloblum
+Questa saga ricostruisce le origini della provincia (precedentemente nota come *Beardow Woods*):
+* **Capitolo 1: La Principessa (*Princess*)**: Lo scrittore e naturalista Armand si inoltra nelle profondità della foresta e scopre il rifugio appartato della Principessa Melloblum e della famiglia dei Budsquire.
+* **Capitolo 2: Il Settimo Budsquire**: Armand stabilisce il legame Twine con la comunità e viene nominato simbolicamente "Settimo Budsquire", iniziando a redigere il diario storico della fioritura.
+* **Capitolo 3: Il Tea Party (*Tea Party*)**: Influenzata dalle usanze dei profumieri di Bloomville, Melloblum organizza incontri cerimoniali per favorire il dialogo pacifico tra le fazioni della foresta.
+* **Capitolo 4: Danza della Fioritura Beata (*Dance of Blissful Bloom*)**: Quando i rozzi Cubbo minacciano di scacciare i residenti, il germoglio della Rosa Whitesnow sboccia in una fioritura miracolosa. Melloblum esegue la sua danza sacra toccando l'animo dei Cubbo, che depongono le ostilità: la foresta viene ribattezzata *Rosetower Woods*.
+* **Capitolo 5: Fiori e Spine (*Flowers and Thorns*)**: Un sisma improvviso fa appassire le rose bianche e i boccioli sacri. Tra i Budsquire, i valorosi fratelli **Thornblade** brandiscono spine indistruttibili per proteggere la foresta. Recupera i 6 germogli dorati e risveglia la memoria della fioritura.
+* **Ricompensa della Saga**: Amuleto **Spina di Rosa** (+15% danni Elemento Erba per la squadra) e titolo storico dei Budsquire.
 
 ---
 
-### Regione 3: Foresta Elettrica di Blitzwood & Una Risposta dal Cielo
-* **Una Risposta dal Cielo (An Answer from the Heavens)**:
-  * *NPC*: Avetine, la celebre profumiera di Bloomville.
-  * *Trama*: Avetine vuole distillare un profumo leggendario usando la *Risposta Dorata (Golden Answer)*, che cresce solo nei punti colpiti da scariche elettriche a Blitzwood.
-  * *Passaggi della Missione*:
-    1. Raggiungi Blitzwood durante un temporale;
-    2. Trova il campo di fioritura prima che i fulmini distruggano i boccioli;
-    3. Schiera un Aniimo di elemento Erba o Terra per creare una cupola di terra isolante;
-    4. Raccogli il polline dorato sbocciato e consegnalo ad Avetine.
-  * *Ricompense*: Set di fiale profumate con buff di velocità e reputazione a Bloomville.
+### Regione 3: Foresta Elettrica di Blitzwood — La Risposta Dorata
+* **Una Risposta dal Cielo (*An Answer from the Heavens*)**:
+  * *Personaggi*: La maestra profumiera **Avetine** e la sua apprendista **Baboni**.
+  * *Trama*: Avetine intende completare l'esame finale di Baboni distillando la formula leggendaria nota come *Vento Dorato (Golden Wind)*, che richiede la rarissima **Risposta Dorata (Golden Answer)**, una pianta che germoglia unicamente dove i fulmini colpiscono il suolo di Blitzwood.
+  * *Svolgimento*: Raggiungi l'Albero di Blitzwood durante un temporale; usa un compagno di elemento Terra per deviare le scariche e creare un perimetro isolato; raccogli il polline dorato prima che venga disperso dal vento e consegnalo ad Avetine.
+  * *Scontro Élite*: Nelle vicinanze si aggira l'**Alpha Blazen** (evoluzione di Bolty), maestro del sovraccarico elettrico.
 
 ---
 
-### Regione 4: Prato di Driftwise (Driftwise Meadow) & Fentufts e i Nimbi
-* **Fentufts e i Nimbi (Fentufts and the Nimbi)**:
-  * *NPC*: Fantine, l'allegra profumiera di Bloomville.
-  * *Trama*: Il piccolo Aniimo Nimbi di Fantine è sprofondato in una tristezza inspiegabile e non apre più le ali.
-  * *Passaggi della Missione*:
-    1. Trova i rari **Fiori Dolciamari (Bittersweet Bloom)** sulle colline di Driftwise;
-    2. Raccogli la rugiada pura prima del sorgere del sole da 3 sorgenti d'acqua sorgiva;
-    3. Bagna le radici dei fiori all'alba ed esegui la melodia dei Fentufts;
-    4. I fiori sbocciano con una fragranza che risveglia l'entusiasmo di Nimbi. Per riconoscenza, Nimbi sblocca per te l'abilità permanente di **volo planato esteso**.
+### Regione 4: Prato di Driftwise — Fentufts e i Nimbi
+* **Fentufts e i Nimbi (*Fentufts and the Nimbi*)**:
+  * *Personaggi*: La profumiera solare **Fantine**.
+  * *Trama*: Il piccolo compagno Nimbi di Fantine ha perso la vitalità e rifiuta di librarsi in volo tra le nubi.
+  * *Svolgimento*: Esplora le colline di Driftwise e raccogli i **Fiori Dolciamari (Bittersweet Bloom)** all'alba; bagna le radici con la rugiada di tre fonti purificate; intona la melodia dei Fentufts per risvegliare l'aroma floreale. L'entusiasmo di Nimbi viene ripristinato e, per gratitudine, ti insegna la tecnica del **volo planato prolungato**.
 
 ---
 
-### Regione 5: Approdo di Echoback (Echoback Landing) & Stelle e il Cavaliere
-* **Stelle e il Cavaliere (Stars and the Knight)**:
-  * *NPC*: Il marinaio Sayn al vecchio faro scosceso.
-  * *Missione*: *"È quello un... faro?"*
-  * *Passaggi della Missione*:
-    1. La lanterna del faro è spenta da secoli: usa un'abilità Fuoco per riaccendere il bruciatore;
-    2. Il fascio di luce rivela un varco segreto nella scogliera;
-    3. Entra nella grotta marina e sfida il boss Alpha **Omega Sherro**;
-    4. Sconfiggi il colosso corazzato per estrarre il raro **Sale di Echoback** e recupera il blasone del Cavaliere dimenticato.
+### Regione 5: Approdo di Echoback — Sayn, il Faro e il Cavaliere
+* **È quello un... faro? (*Is That a... Lighthouse?*)**:
+  * *Personaggi*: Il ricercatore di Aniimo **Sayn** e la profumiera **Sunia**.
+  * *Trama*: Il faro monumentale sulla scogliera è spento da decenni e cela l'accesso a cavità marine sommerse.
+  * *Svolgimento*: Riaccendi il bruciatore centrale del faro usando un'abilità di Fuoco; il fascio di luce rivela un'insenatura tra le rocce dove riposa l'antico scheletro di Echoback.
+* **Stelle e il Cavaliere (*Stars and the Knight*) & Il Canto Eterno**:
+  * Esplora la grotta marina e affronta il boss colossale **Sherro Alpha**.
+  * Aggira il suo guscio corazzato quando si barrica e colpisci il ventre morbido per raccogliere il prezioso **Cristallo di Sale di Echoback**.
+  * Consegna il sale a Sunia per distillare la fragranza blu profondo dell'accettazione e recuperare il blasone del Cavaliere d'Acciaio.
 
 ---
 
-### Regione 6: Altopiani Fulvi (Russet Highlands) & La Saga del Guerriero
-* **Guerriero (Warrior)**:
-  * *NPC*: Sorora, la guerriera delle gole scarlatte.
-  * *Trama*: Sorora cerca le tracce dell'ultimo scontro sostenuto da suo fratello contro le ombre.
-  * *Passaggi della Missione*:
-    1. Usa le correnti ascensionali con la missione *"Fly Free!"* per scalare le pareti rocciose a strapiombo;
-    2. Raggiungi il nido dei rapaci montani e recupera l'**Elmo Rotto**;
-    3. Consegna l'elmo a Sorora;
-    4. Affronta il titano d'ombra a guardia del cratere e abbattilo per estrarre la leggendaria **Pietra Cuore di Fiamma (Flameheart Stone)**.
+### Regione 6: Altopiani Fulvi (Russet Highlands) — La Pittrice Sorora e il Guerriero
+* **Missione Viaggio: Guerriero (*Warrior*)**:
+  * *Personaggi*: La pittrice **Sorora**.
+  * *Trama*: Sorora cerca di ricostruire su tela le leggende del drago e i ricordi del fratello scomparso durante un'antica battaglia sulle creste infuocate.
+  * *Svolgimento*: Raggiungi le vette scoscese sfruttando le correnti termiche con la tecnica *Fly Free!*; recupera l'elmo da combattimento rotto dal nido dei rapaci montani; consegnalo a Sorora e affronta le incarnazioni d'ombra del cratere per comprendere che il vero spirito del guerriero rinasce continuamente come il ciclo del Fuoco.
+  * *Minaccia territoriale*: Il drago delle vette **Infergon**.
 
 ---
 
-### Regione 7: Boschi Nebbiosi (Mistwoods) & Giuramento Vincolante
-* **Giuramento Vincolante (Binding Oath)**:
-  * *Guida*: Nella nebbia fitta, la bussola gira all'impazzata. Segui i funghi luminescenti sul terreno calpestando solo quelli con bagliore azzurro. Raggiungi la tana del boss **Tucking**. Sconfiggilo evitando le spore tossiche per raccogliere il pregiato **Super Tartufo (Super Truffle)** e ottenere il Distintivo d'Onore dei Custodi Naturali.
+### Regione 7: Boschi Nebbiosi (Mistwoods) — Le Spore di Tuckin Omega
+* **La Tana delle Spore**:
+  * Nella nebbia perenne della foresta, orientati calpestando esclusivamente i funghi con luminescenza azzurra per non perdere i punti cardinali.
+  * Raggiungi la radura del boss **Tuckin Omega**: la creatura si barrica dietro uno spesso Scudo di Terra e scaglia martelli di liane e spore tossiche.
+  * Distruggi i costrutti vegetali con abilità di elemento **Fuoco**, manda il boss in BREAK ed estrai il prezioso **Super Tartufo** per completare la catalogazione dei guardiani naturali.
 
 ---
 
-### Regione 8: Valle Berillina & Foresta delle Stelle Cadenti
-* **Frammenti d'Astro & Il Labirinto Speculare**:
-  * Esplora la vallata nelle ore notturne per raccogliere i meteoriti di berillo caduti tra le querce secolari.
-  * Risolvi i labirinti di specchi riflettenti orientando la luce lunare sui prismi sigillati per aprire forzieri con rune di difesa magica leggendarie.
+### Regione 8: Foresta delle Stelle Cadenti & Valle Berillina
+* **I Frammenti Celesti e la Danza Lunare**:
+  * Esplora la radura dell'Albero delle Stelle durante le ore notturne per raccogliere i meteoriti di berillo precipitati.
+  * Risolvi gli enigmi dei prismi riflettenti orientando i raggi lunari sui pilastri sigillati per aprire forzieri contenenti rune e schemi decorativi della Dimora.
+  * Avvista e documenta il maestoso compagno **Celestis** durante le aurore stellari.
+
+---
+
+### Regione 9: Cresta delle Zanne (Beast Fang Ridge) — La Leggenda Recas e Icho
+* **La Faida Ancestrale**:
+  * Esplora i canyon rocciosi dove si scontrarono storicamente le casate dei **Bonesky** e degli **Emberpup**.
+  * Rintraccia i monumenti commemorativi e apprendi l'origine dei titoli onorari di comando *Recas* (attribuito a Glynsera) e *Icho*.
+  * Sfida il boss territoriale **Flameruff Omega** per ottenere il prestigioso Distintivo del Pugno Esplosivo (*Bursting Fist Badge*).
 
 ---
 
 # 4. GUIDA DETTAGLIATA TIPO 3: PROGRAMMA DI ADDESTRAMENTO ELITE
 
-L'Addestramento Elite è la struttura di certificazione ufficiale dell'Istituto Polaris coordinata dal **Dr. Lewis**. Senza di essa, il Pathfinder rimane bloccato al rango di Recluta. Si articola in **5 Dipartimenti Specialistici**:
+Coordinato dal **Dr. Lewis** e dai docenti dell'Istituto Polaris, questo programma certifica il rango del Pathfinder attraverso 5 dipartimenti accademici:
 
+### I 5 Dipartimenti dell'Istituto Polaris
 ```text
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │                 I 5 DIPARTIMENTI DELL'ADDESTRAMENTO ELITE                   │
 ├───────────────────┬───────────────────┬─────────────────────────────────────┤
-│ DIPARTIMENTO      │ AMBITO DI PROVA   │ PRINCIPALI ABILITÀ SBLOCCATE        │
+│ DIPARTIMENTO      │ AMBITO DI PROVA   │ ABILITÀ / BENEFICI SBLOCCATI        │
 ├───────────────────┼───────────────────┼─────────────────────────────────────┤
-│ 1. Aniimologia    │ Cattura & Specie  │ Approccio furtivo, Twine, Affinità  │
-│ 2. Battle Arts    │ Combattimento     │ Barra BREAK, Reazioni, Sanctum      │
-│ 3. Pathfinding    │ Esplorazione      │ Torri Vein, Forzieri Voxel, Mappa   │
-│ 4. Conoscenza     │ Art of Living     │ Botanica, Alchimia, Cucina da campo │
-│ 5. Amministrazione│ Gestione Dimora   │ Camper Park, Ordini, Stelle Desideri│
+│ 1. Aniimologia    │ Cattura & Twine   │ Furtività, lettura dialoghi mostro  │
+│ 2. Battle Arts    │ Combattimento     │ Rottura BREAK, combo, Sanctum       │
+│ 3. Pathfinding    │ Esplorazione      │ Torri Faglie, Forzieri Voxel, Mappa │
+│ 4. Conoscenza     │ Art of Living     │ Botanica, Alchimia, Cucina campo    │
+│ 5. Amministrazione│ Gestione Dimora   │ Camper Park, Ordini, Desideri       │
 └───────────────────┴───────────────────┴─────────────────────────────────────┘
 ```
 
 ### Dipartimento 1: Aniimologia
-* **Prove di Approccio Furtivo**: Eseguire 10 catture consecutive senza essere scoperti (lanci alle spalle o dai cespugli).
-* **Affinità Twine Avanzata**: Attivare la risonanza mentale con almeno un esemplare per ciascuna delle 8 Famiglie, sbloccando la totalità dei dialoghi del bestiario.
-* **Studio sulle Mutazioni**: Rintracciare e registrare almeno 3 esemplari cromatici (*Sparkling*) e portare un compagno al livello massimo di legame affettivo.
-* *Ricompensa*: Modulo "Sintonia Mentale" (tempi di ricarica abilità compagno ridotti del 15%).
+* **Prova di Furtività**: Effettua 10 catture consecutive alle spalle senza allertare il bersaglio.
+* **Sintonia Twine Multi-Specie**: Attiva il legame mentale con esemplari di tutte le famiglie primarie per completare le voci enciclopediche del bestiario.
+* **Studio Varianti**: Documenta esemplari cromatici (*Sparkling*) e porta al massimo l'affinità con un compagno.
 
 ### Dipartimento 2: Battle Arts
-* **Corso di Rottura dello Scudo (BREAK Mastery)**:
-  * Eseguire 50 rotture di guardia mandando bersagli d'élite in stato BREAK;
-  * Mantenere un moltiplicatore superiore al 150% di danno durante lo stordimento.
-* **Maestria Elementale**: Innescare combo a reazione combinando Fuoco + Vento o Acqua + Elettricità su gruppi di almeno 4 nemici.
-* **La Prova dei Sanctum**: Completare 5 Sanctum sotterranei sconfiggendo i boss Alpha senza subire K.O.
-* *Ricompensa*: Runa Leggendaria di Potenza Critica e Licenza d'Armi Avanzata.
+* **BREAK Mastery**: Svuota la barra di guardia di 50 nemici élite mandandoli in stato di BREAK e sfruttando la finestra di danno maggiorato.
+* **Reazioni a Catena**: Innesca reazioni elementali travolgenti (Fuoco + Vento, Acqua + Elettricità) su gruppi di almeno 4 avversari.
+* **Esplorazione dei Sanctum**: Completa i dungeon sotterranei dei Sanctum sconfiggendo i boss Alpha a guardia dei nuclei.
 
 ### Dipartimento 3: Pathfinding
-* **Armonizzazione Geografica**: Attivare tutte le Torri delle Faglie (Vein Towers) del continente e sbloccare il 100% della mappa.
-* **Caccia ai Forzieri Voxel**: Individuare e forzare 30 forzieri voxel nascosti su vette elevate e fondali marini.
-* **Prove a Tempo Acrobatiche**: Concludere percorsi a ostacoli e gare di planata entro i tempi limite stabiliti dai docenti.
-* *Ricompensa*: Aliante Potenziato con planata estesa del 30% e consumo ridotto di vigore.
+* **Armonizzazione Continentale**: Riattiva tutte le Torri delle Faglie presenti sul continente per rivelare l'intera topografia di Idyll.
+* **Maestria Voxel**: Individua e scassina 30 forzieri a combinazione voxel celati su picchi montani e fondali marini.
+* **Prove a Tempo di Planata**: Completa i percorsi ad anelli e le prove di volo planato entro i limiti temporali stabiliti.
 
-### Dipartimento 4: Conoscenza del Mondo ("Art of Living")
-* **Gran Maestro Botanico**: Trovare e coltivare tutte le 25 specie botaniche rare di Idyll.
-* **La Cucina dei Campioni**: Cucinare con il Modulo Cucina del Camper tutti i banchetti a 5 stelle con buff cumulativi per la squadra.
-* **Raccolta Essenze**: Raccogliere 100 Essenze Pure dei 4 elementi (Acqua, Fuoco, Erba, Etere).
-* *Ricompensa*: Ricetta Segreta "Banchetto del Pioniere" e Borsa Erboristica Capiente.
+### Dipartimento 4: Conoscenza del Mondo (Art of Living)
+* **Raccolta Botanica**: Cataloga e coltiva le 25 varietà floreali ed erboristiche di Idyll.
+* **Alta Cucina da Viaggio**: Prepara tutti i banchetti a 5 stelle con il Modulo Cucina del Camper per conferire buff prolungati alla squadra.
+* **Estrazione Essenze**: Raccogli essenze pure dei 4 elementi naturali per la distillazione alchemica.
 
 ### Dipartimento 5: Amministrazione & Dimora
-* **Efficienza Produttiva**: Organizzare i turni dei 24 compagni nella Dimora per completare 100 ordini commerciali.
-* **Espansione Tecnologica**: Portare tutti i moduli del Camper Park (Cucina, Ecologico, Rilevatore) al Liv. 3.
-* **Prosperità Stellare**: Generare e reinvestire 50.000 Stelle dei Desideri.
-* *Ricompensa*: Titolo Onorario "Magnate di Idyll" e Trofeo d'Oro dell'Amministrazione.
+* **Gestione della Produzione**: Organizza i turni dei compagni nella Dimora per evadere 100 ordini mercantili.
+* **Sviluppo Tecnologico Camper**: Porta al livello massimo i moduli funzionali (Rilevatore di Risorse, Cucina, Ecologico).
+* **Economia Stellare**: Genera e reinvesti oltre 50.000 Stelle dei Desideri per espandere le strutture del parco.
 
-### I Corsi Pratici: Base, Fuoco, Acqua, Sinergia ed Estremo
-* **Addestramento Sinergia**: *"L'istruttore ti ha messo in fondo alla fila! Segui il ritmo e salta al momento giusto."* Impara a saltare a tempo sui trampolini energetici delle Faglie per evitare onde d'urto sismiche.
-* **Addestramento Fuoco (Facile / Estremo)**: Impara a gestire il surriscaldamento delle armi e a spegnere i roghi boschivi prima che distruggano gli insediamenti.
-* **Addestramento Acqua**: Impara a muoverti nelle correnti rapide e a congelare le cascate per creare piattaforme di ghiaccio scalabili.
-
----
-
-# 5. MECCANICHE ESSENZIALI, SEGRETI & BESTIARIO DEI BOSS
-
-### Formula Matematica Esatta di Cattura con Aniipod
-La percentuale finale di cattura \(P\) è governata dal seguente algoritmo matematico estratto dal codice:
-$$P = P_{\text{base}} \times M_{\text{posizione}} \times M_{\text{vita}} \times M_{\text{status}}$$
-
-* **Posizione di Lancio (\(M_{\text{posizione}}\))**:
-  * Lancio Frontale: \(1.0\times\)
-  * Lancio Laterale: \(1.15\times\)
-  * **Lancio alle Spalle (Backstab)**: **\(1.35\times\)**
-* **Condizione Punti Vita (\(M_{\text{vita}}\))**:
-  * Punti Vita sopra il 70%: \(1.0\times\)
-  * Punti Vita tra 30% e 70%: \(1.4\times\)
-  * **Punti Vita sotto il 30%**: **\(2.0\times\)**
-* **Alterazione di Stato (\(M_{\text{status}}\))**:
-  * Stato Normale: \(1.0\times\)
-  * Rallentato: \(1.2\times\)
-  * **In BREAK o Congelato/Addormentato**: **\(1.5\times\)**
-
-*Esempio per Aniimo Raro (Tasso base 20%)*:
-Colpendolo alle spalle (\(1.35\)), portandolo sotto il 30% di HP (\(2.0\)) e mettendolo in BREAK (\(1.5\)), la percentuale finale diventa:
-$$20\% \times 1.35 \times 2.0 \times 1.5 = 81\%$$
+### I Corsi Pratici: Sinergia, Fuoco, Acqua ed Estremo
+* **Addestramento Sinergia**: Esercitazione sul tempismo di salto sui trampolini delle Faglie per superare onde d'urto concentriche.
+* **Addestramento Fuoco (Base / Estremo)**: Gestione del surriscaldamento dell'equipaggiamento ed estinzione rapida di roghi boschivi prima che danneggino gli insediamenti.
+* **Addestramento Acqua**: Navigazione in correnti rapide e congelamento controllato di cascate per creare percorsi verticali.
 
 ---
 
-### Il Legame Twine e la Traduzione dei Dialoghi Mostro
-Gli Aniimo selvatici nel mondo aperto emettono versi indecifrabili. Nel momento in cui effettui il legame mentale **Twine** con un rappresentante di quella famiglia:
-1. I loro pensieri e versi vengono tradotti a schermo in testo italiano perfettamente leggibile;
-2. Potrai cogliere indizi vocali su tesori sepolti, forzieri voxel nelle vicinanze o anomalie meteorologiche;
-3. Il Pathfinder riceve un bonus passivo pari al **+10%** della statistica cardine dell'Aniimo legato (ATT, DIF o HP).
+# 5. GLI ELEMENTI E IL SISTEMA DI CONTROMOSSE (I 9 ELEMENTI)
+
+Aniimo non adotta un banale triangolo a tre elementi, bensì un articolato sistema strategico a **9 Elementi**:
+
+```text
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                   SCHEMA DELLE CONTROMOSSE ELEMENTALI                       │
+├───────────────────┬─────────────────────────────────────────────────────────┤
+│ ELEMENTO          │ EFFICACIA STRATEGICA & CONTROMOSSE                      │
+├───────────────────┼─────────────────────────────────────────────────────────┤
+│ ERBA              │ Molto efficace contro ACQUA                             │
+│ TERRA             │ Contrasta efficacemente VENTO ed ELETTRICITÀ            │
+│ FUOCO             │ Infligge danni critici ad ERBA                          │
+│ VENTO             │ Efficace contro ERBA e crea combo di dispersione        │
+│ OSCURITÀ (Dark)   │ Devastante contro ERBA; scontro critico con LUCE        │
+│ LUCE              │ L'unica vera contromossa per spezzare l'OSCURITÀ        │
+│ GHIACCIO          │ Rallenta e congela; vulnerabile a FUOCO e FORZA BRUTA   │
+│ ACQUA             │ Estingue il FUOCO; vulnerabile ad ERBA ed ELETTRICITÀ   │
+│ ELETTRICITÀ       │ Conduce attraverso ACQUA; contrastata da TERRA          │
+└───────────────────┴─────────────────────────────────────────────────────────┘
+```
+
+* **Dicotomia Luce / Oscurità**: Luce e Oscurità si infliggono a vicenda un bonus di danno critico superiore al **+50%**. Contro i boss d'Ombra (come Helgon o la Manifestazione Primordiale), schierare la Luce è indispensabile per abbattere le barriere.
+* **Efficacia sulla Barra BREAK**: Colpire un bersaglio con l'elemento di contrasto svuota la sua barra di guardia a velocità tripla rispetto a un attacco neutro.
 
 ---
 
-### Elementi, Moltiplicatori e Finestra di Stordimento BREAK
-* **Il Triangolo Elementale Base**:
-  * **Fuoco** batte **Erba** (+30% danno);
-  * **Erba** assorbe **Acqua** (+30% danno);
-  * **Acqua** estingue **Fuoco** (+30% danno).
-* **Dicotomia Astrale**:
-  * **Luce** e **Oscurità** si infliggono a vicenda il **+50% di danno critico**.
-* **La Meccanica del BREAK**:
-  * La barra grigia sotto gli HP dei nemici d'élite indica l'integrità dello scudo.
-  * Usare abilità dell'elemento opposto svuota la barra a velocità tripla.
-  * Quando la barra si azzera, il nemico collassa per **8 secondi interi**: durante questa finestra non può agire e tutti i danni subiti beneficiano di un moltiplicatore dal **150% al 200%**.
+# 6. MECCANICHE ESSENZIALI, CATTURA E SEGRETI
+
+### La Verità sulla Meccanica di Cattura
+Nel motore di Aniimo la probabilità di cattura dipende da fattori precisi e verificati:
+1. **Tipo di Aniipod**:
+   - **Standard**: Tasso base.
+   - **Pro**: Moltiplicatore pari a **1,5×**.
+   - **Ultra / Leggendario**: **Cattura garantita al 100%**.
+2. **Posizionamento tattico**:
+   - Lancio frontale: Tasso normale.
+   - **Lancio alle spalle o di fianco**: Notevole incremento della percentuale di successo.
+3. **Stato comportamentale**:
+   - Bersaglio allertato/aggressivo: Penalità di cattura.
+   - Bersaglio **intento a mangiare o addormentato**: Bonus sostanziale alla cattura.
+4. **Stato di BREAK (Cattura Rapida)**:
+   - Mandando un nemico élite o selvatico in BREAK (azzeramento della barra scudo), si attiva temporaneamente l'opzione di **Cattura Rapida**, consentendo la cattura istantanea prima che si riprenda.
+   - Il valore della barra BREAK non scende mai al di sotto di 1 durante il combattimento attivo.
 
 ---
 
-### Flusso Prismatico e Comparsa degli Aniimo Stadio Nova
-Nutrendo regolarmente l'ecosistema di una provincia (catturando Aniimo locali e curando i terreni vegetali), il termometro dell'Energia delle Faglie sale progressivamente.
-* Al raggiungimento del 100%, esplode il fenomeno del **Flusso Prismatico (Prismana Flow)**;
-* Durante il flusso compaiono gli esclusivi **Aniimo Prismatici** con colorazioni iridescenti arcobaleno e statistiche raddoppiate;
-* La percentuale di comparsa di compagni allo **Stadio Nova** aumenta del **300%**.
+### Flusso Prismatico (Prismana Flow)
+Effettuando azioni di cura dell'ecosistema (**Nurture**) e catturando creature in una provincia, l'Energia delle Faglie locale si accumula:
+* Ogni incremento da Nurture ha il **3%** di probabilità di scatenare un **Flusso Prismatico**.
+* Ogni cattura con colpo fortunato (*Lucky Strike*) ha lo **0,6%** di probabilità di innescarlo.
+* Durante il Flusso compaiono esemplari **Prismatici** (colorazioni iridescenti e statistiche potenziate) e la frequenza di comparsa degli Aniimo allo **Stadio Nova** sale drasticamente.
 
 ---
 
-### Guida Strategica ai Boss
+# 7. BESTIARIO DEI BOSS (ALPHA, OMEGA E TITANI)
 
-#### 1. Omega Sherro (Il Terrore delle Scogliere di Echoback)
+#### 1. Sherro Alpha (Scogliere di Echoback)
 * **Elemento**: Acqua / Corazzato.
-* **Punto Debole**: Ventre morbido quando solleva le chele.
-* **Strategia**: Quando si rintana nel guscio diventa immune agli attacchi frontali. Evoca un compagno Erba per intrappolarlo con le liane da dietro, aggiralo e scaglia attacchi elettrici sul ventre per mandarlo subito in BREAK.
+* **Punto debole**: Ventre morbido quando solleva le chele.
+* **Tattica**: Quando si rintana nel guscio diventa impenetrabile agli attacchi frontali. Aggiralo con uno scatto e colpisci il ventre con compagni di elemento Erba o Elettricità per indurre il BREAK.
 
-#### 2. Tucking (Il Signore dei Funghi di Mistwoods)
+#### 2. Tuckin Omega (Boschi Nebbiosi — Mistwoods)
 * **Elemento**: Terra / Spore Tossiche.
-* **Punto Debole**: Corona del cappello durante l'emissione delle spore.
-* **Strategia**: Tucking dissemina il terreno di funghi esplosivi a tempo. Schiera compagni con attacchi ad area di Fuoco per incenerire le spore prima che rilascino il gas. Mantieniti a media distanza e scarica colpi pesanti nei momenti di ricarica.
+* **Punto debole**: Corona del cappello durante il rilascio delle spore.
+* **Tattica**: Si protegge con uno spesso Scudo di Terra e pianta martelli di liane esplosivi. Usa attacchi ad area di Fuoco per incenerire le spore e abbattere rapidamente la sua guardia.
 
-#### 3. Il Custode Meccanico (Stazione Atmosferica)
-* **Elemento**: Elettricità / Metallo.
-* **Punto Debole**: Condensatori di raffreddamento sui fianchi.
-* **Strategia**: Salta sulle piattaforme metalliche rialzate non appena il pavimento inizia a caricarsi di elettricità. Colpisci in sequenza i 3 condensatori per causare un corto circuito totale.
+#### 3. Helgon — Il Drago Ancestrale (Altopiani e Fratture)
+* **Elemento**: Oscurità (Dark).
+* **Varianti confermate**: *Helgon Sfregiato (Scar-faced)*, *Helgon Berserk*, *Helgon l'Avaro*.
+* **Tattica**: Vola rilasciando sfere d'ombra a ricerca e atterra generando onde sismiche. Salta le onde d'urto ed evoca compagni di elemento **Luce** per dissolvere la sua corazza spettrale.
 
-#### 4. Helgon (Il Drago Ancestrale delle Ombre)
-* **Elemento**: Oscurità Primordiale.
-* **Punto Debole**: Gioiello frontale del teschio durante l'atterraggio.
-* **Strategia**: Helgon vola in cielo rilasciando sfere d'ombra a ricerca e sbatte le ali generando onde d'urto sul terreno. Salta le onde d'urto con precisione. Schiera compagni di elemento **Luce** per dissolvere la sua barriera protettiva e quando precipita al suolo svuota la barra BREAK per porre fine allo scontro!
+#### 4. Infergon (Cratere delle Russet Highlands)
+* **Elemento**: Fuoco Primordiale.
+* **Tattica**: Il calore vulcanico delle gole lo rigenera costantemente. Schiera abilità di elemento Acqua o Terra per estinguere le sue fiamme e interrompere i cicli di cura.
+
+#### 5. Alpha Glacy — "Lord of Ice and Snow"
+* **Elemento**: Ghiaccio / Acqua.
+* **Tattica**: Estremamente resistente e dotato di potenti aure di rigenerazione. Sfrutta il Fuoco per sciogliere le sue barriere di ghiaccio solido.
+
+#### 6. Alpha Blazen (Evoluzione di Bolty — Blitzwood)
+* **Elemento**: Elettricità.
+* **Tattica**: Entra rapidamente nello stato *Overcharged* concatenando scariche fulminee. Schiera creature di elemento Terra per assorbire i colpi ed esporre il suo nucleo.
+
+#### 7. Stellarys Alpha (Dominio Oscuro)
+* **Elemento**: Oscurità pura.
+* **Tattica**: Crea duplicati d'ombra che confondono il puntamento. Identifica l'originale dalla luce del nucleo e usa attacchi di Luce.
 
 ---
 
-# 6. NOTE E CREDITI
+# 8. LE 12 REGIONI DI IDYLL
 
-* **Traduzione, localizzazione italiana integrale e revisione riga per riga di tutte le 112.187 stringhe a cura di**: **SirBotolo (SirBotolo21)**.
-* **Stesura della Guida Ufficiale Completa (Trama, Missioni e Meccaniche) a cura di**: **SirBotolo (SirBotolo21)**.
+| Regione (Italiano) | Nome Internazionale | Caratteristiche Geografiche & Creature Tipiche |
+|---|---|---|
+| **Pianure Ventose** | Breezy Plains | Zona iniziale; praterie ondulate, grande energia Vein. |
+| **Boschi di Rosetower** | Rosetower Woods | Ex Beardow Woods; alberi monumentali, Melloblum, Budsquire, Cubbo. |
+| **Foresta Elettrica** | Blitzwood | Tempeste magnetiche costanti, Bolty, Blazen, Bulblie. |
+| **Prato di Driftwise** | Driftwise Meadow | Distese di erba alta, Nimbi, Fentuft, Skippy. |
+| **Approdo di Echoback** | Echoback Landing | Coste rocciose, scheletri marini, Sherro Alpha, Susuta, Echonite. |
+| **Altopiani Fulvi** | Russet Highlands | Canyon vulcanici scarlatti, Infergon, Scorchhowl, Emberpup. |
+| **Boschi Nebbiosi** | Mistwoods | Nebbia fitta, funghi luminescenti, Tuckin Omega, Glameep. |
+| **Valle Berillina** | Berylline Vale | Gole rocciose ricche di minerali, Waleetle, meteoriti di berillo. |
+| **Foresta delle Stelle Cadenti** | Falling Star Forest | Radure notturne magiche, Celestis, alberi stellati. |
+| **Cresta delle Zanne** | Beast Fang Ridge | Vette montane selvagge, Flameruff Omega, Glynsera, saga Recas/Icho. |
+| **Campi dei Nimbi** | Nimbus Fields | Altopiani nuvolosi sospesi, correnti ascensionali continue. |
+| **Altopiano Bianco** | White Plateau | Vette perennemente innevate, ghiacci secolari, Alpha Glacy. |
+
+---
+
+# 9. BESTIARIO DELLE SPECIE ANIIMO
+
+Elenco delle principali famiglie confermate nel codice di gioco:
+* **Acquatici e Costieri**: Sherro, Susuta, Echonite, Jawling, Tubster, Gachapus.
+* **Flora e Bosco**: Melloblum, Budsquire (e variante Thornblade), Cubbo, Flutternym, Irisalis, Fragrancier, Fennelun, Soleon, Leafy.
+* **Elettrici e Magnetici**: Bolty, Blazen, Bulblie, Luminelle, Turbo, Sparki.
+* **Vento e Nuvole**: Nimbi, Fentuft, Skippy, Windgliders, Chirpi, Hummin.
+* **Fuoco e Calore**: Emberpup, Scorchhowl, Flameruff, Infergon, Magmarex, Ignitis, Icho.
+* **Ghiaccio e Tundra**: Glacy ("Lord of Ice and Snow"), Snowy.
+* **Terra e Caverne**: Tuckin, Glameep, Helmut, Cozite, Tromber.
+* **Draghi, Stelle e Mutaforma**: Helgon, Stellarys, Celestis, Morphling, Pomegg, Bonesky, Rookey.
+
+---
+
+# 10. COMANDI E CONTROLLI UFFICIALI (PC & CONTROLLER)
+
+* **Diario Missioni**: Tasto `J` (tastiera) / `D-Pad Su` (controller).
+* **Movimento Base**: `W`, `A`, `S`, `D` / `Levetta Sinistra`.
+* **Furtività (Accovacciata)**: Tasto `Z` o `Ctrl` (riduce a zero il rumore nei cespugli).
+* **Scatto Rapido**: Tieni premuto `Shift` / `Grilletto Destro`.
+* **Salto e Volo Planato**: Premi `Spazio` / `Pulsante Sud` per saltare; ripremilo in aria per planare.
+* **Abilità Primarie Compagno**: Tasti `Q` ed `E` (alcune abilità permettono la mira tenendo premuto il tasto).
+* **Attacco Base / Interazione**: `Tasto Sinistro del Mouse` / `Pulsante Ovest`.
+* **Modalità Cattura (Catch Mode)**: Premi il `Tasto Destro del Mouse` per entrare in modalità cattura; aggancia il bersaglio e premi il `Tasto Sinistro` per scagliare l'Aniipod.
+* **Modalità Comando**: Premi `G` per ordinare al compagno di combattere in autonomia.
+* **Gestione Dimora & Spostamento Oggetti**: In modalità costruzione, trascina gli elementi con il cursore, regola l'altezza e la distanza con la rotella del mouse (`Scroll Wheel`) e conferma con il tasto sinistro.
+
+---
+
+# 11. PERSONAGGI PRINCIPALI
+
+* **Dr. Lewis**: Scienziato capo della spedizione; coordina la ricerca archeologica e l'Addestramento Elite.
+* **Preside Oswen**: Rettore dell'Istituto Polaris; colui che portò il primo Aniimo ad Astra.
+* **Margaret**: Ufficiale di benvenuto e coordinatrice di Piazza Orizzonte.
+* **Istruttore Bohr**: Docente capo di Aniimologia e maestro delle tecniche di combattimento.
+* **Nicole**: Ricercatrice sul campo e assistente della spedizione.
+* **Armand**: Scrittore e naturalista; autore del diario storico di Rosetower e settimo Budsquire onorario.
+* **Avetine**: Maestra profumiera di Bloomville (protagonista della missione di Blitzwood).
+* **Baboni**: Giovane apprendista profumiera di Avetine.
+* **Fantine**: Profumiera solare di Driftwise (protagonista della missione di Nimbi).
+* **Sorora**: Pittrice paesaggista delle Russet Highlands (protagonista della missione *Warrior*).
+* **Sayn**: Ricercatore e storico di Aniimo all'Approdo di Echoback.
+* **Sunia**: Alchimista e distillatrice di cristalli di sale marino.
+* **Lady Irelia & Lady Velouria**: Figure leggendarie della Florifragrant School e del culto di Somniwing.
+
+---
+
+# 12. GLOSSARIO DEI TERMINI
+
+* **Aniimo**: Le creature simbiotiche native del continente di Idyll.
+* **Aniipod**: Dispositivo a sfera sferica per la cattura e il contenimento sicuro degli Aniimo.
+* **Twine**: Il legame neurale simbiotico tra Pathfinder e Aniimo che permette la comprensione istantanea dei loro pensieri e l'uso delle abilità.
+* **BREAK**: Stato di vulnerabilità totale di un bersaglio a cui è stata svuotata la barra di guardia; sblocca la Cattura Rapida e moltiplica i danni subiti.
+* **Faglia (Vein)**: Canale energetico sotterraneo che irriga la terra di Idyll.
+* **Torre delle Faglie (Vein Tower)**: Struttura monumentale che amplifica il segnale cartografico e dissipa la nebbia.
+* **Forziere Voxel**: Cassaforte ad incastro geometrico celata dai coloni antichi.
+* **Dimora (Home)**: Tenuta personale personalizzabile del giocatore.
+* **Camper (RV)**: Veicolo mobile di supporto tecnologico con moduli intercambiabili (Riposo, Cucina, Ecologia, Radar).
+* **Stelle dei Desideri (Wish Stars)**: Valuta speciale ottenuta dalla produzione della Dimora per sbloccare progetti rari.
+* **Dragon Bus**: Rete di trasporto rapido continentale.
+* **Flusso Prismatico (Prismana Flow)**: Tempesta energetica benevola che fa apparire creature cromatiche con statistiche massimizzate.
+
+---
+
+# 13. DOMANDE FREQUENTI (FAQ)
+
+* **D: Perché il gioco è in italiano se seleziono "Français"?**  
+  *R*: La traduzione italiana è stata impiantata sullo slot linguistico francese del gioco. Selezionando Français nelle opzioni, l'intero motore caricherà la localizzazione italiana revisionata.
+* **D: Come faccio a catturare un boss Alpha?**  
+  *R*: Gli Alpha non possono essere catturati al massimo della salute. Devi prima ridurre la loro barra di guardia mandandoli in **BREAK**, oppure portarli a punti vita critici e utilizzare un **Aniipod Pro** o **Ultra**.
+* **D: Perché il gioco dava errore "LuaData corrupted: BadSize"?**  
+  *R*: Questo accadeva se venivano modificati i file protetti nella cartella `StreamingAssets`. Il nostro installer protegge la directory `StreamingAssets` mantenendola pulita e applica le patch solo attraverso `cvs/res/lua/` e `patchv2/`.
+* **D: Come posso ripristinare i file originali se necessario?**  
+  *R*: È sufficiente fare doppio clic sul file `Ripristina_Originale.bat` incluso nel pacchetto.
+
+---
+
+# 14. NOTE E CREDITI
+
+* **Traduzione, localizzazione italiana integrale (112.183 stringhe) e revisione a cura di**: **SirBotolo (SirBotolo21)**.
+* **Stesura dell'Enciclopedia e Guida Completa alle Missioni a cura di**: **SirBotolo (SirBotolo21)**.
 * **Repository GitHub Ufficiale**: [https://github.com/SirBotolo21/Traduzione-Aniimo](https://github.com/SirBotolo21/Traduzione-Aniimo)
-* Compatibile al 100% con la versione PC attuale di **Aniimo**.
+* **Scheda NexusMods Ufficiale**: [https://www.nexusmods.com/aniimo/mods/5](https://www.nexusmods.com/aniimo/mods/5)
+* Compatibile al 100% con l'ultima versione PC di **Aniimo**.
 
 *Buon viaggio su Idyll a tutti i Pathfinder italiani! Firmato: SirBotolo (SirBotolo21).*

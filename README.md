@@ -53,8 +53,9 @@ Se preferisci copiare i file a mano, copia i file presenti nella cartella `files
 Nelle seguenti cartelle all'interno della directory di gioco `Aniimo_Data`:
 
 1. `Aniimo_Data/cvs/res/lua/`
-2. `Aniimo_Data/StreamingAssets/cvs/res/lua/`
-3. `Aniimo_Data/cvs/res/patchv2/lua/ver/3544783/` *(o eventuale cartella di versione numerata presente)*
+2. `Aniimo_Data/cvs/res/patchv2/lua/ver/3544783/` *(o eventuale cartella di versione numerata presente)*
+
+*(Nota: non toccare la cartella StreamingAssets, che deve rimanere integra per superare i controlli del motore).*
 
 ---
 
@@ -95,11 +96,16 @@ Traduzione-Aniimo/
 ---
 
 ## 📖 Guida Completa al Gioco
-All'interno del repository trovi il file **[`GUIDA_GIOCO.md`](GUIDA_GIOCO.md)**, una guida dettagliata e approfondita redatta analizzando direttamente i dialoghi e i dati di missione di Aniimo:
-* **Trama Principale**: Walkthrough completo degli Atti da 1 a 10.
-* **Tutte le Grandi Missioni Viaggio (*Journey Quests*)**: *Stelle e il Cavaliere*, *Guerriero*, *Una Risposta dal Cielo*, *Fentufts e i Nimbi*, *Giuramento Vincolante*, *La Leggenda di Armand*.
-* **Meccaniche di Gioco & Segreti**: Formule di cattura con Aniipod, legame *Twine*, barra *BREAK*, gestione della Dimora e risveglio del Flusso Prismatico.
-* **Boss Rush & Addestramento Elite**.
+All'interno del repository trovi il file **[`GUIDA_GIOCO.md`](GUIDA_GIOCO.md)**, una guida completa e verificata direttamente sui dati di gioco (112.187 stringhe + 8.500 script Lua), ampliata a **14 sezioni**:
+* **Guida Rapida** e sistema delle missioni (3 macro-tipi / 7 categorie reali).
+* **Walkthrough completa** degli 10 Atti di Storia con i titoli ufficiali estratti dal gioco.
+* **Missioni Avventura & Indizi**: tutte le regioni principali più Beast Fang Ridge, Nimbus Fields, White Plateau, Argent Strait.
+* **Addestramento Elite**: i 5 Dipartimenti e i Corsi pratici.
+* **Sistema dei 9 elementi** e contromosse (verificato dal codice, non il vecchio triangolo a 3).
+* **Meccaniche essenziali**: cattura (Aniipod Pro/Ultra), BREAK, Twine, Flusso Prismatico, Alpha/Omega.
+* **Bestiario Boss** aggiornato con nomi reali (Sherro Alpha, Tuckin Omega, Helgon, Blazen, Stellarys…).
+* **Bestiario Aniimo** con oltre 80 specie confermate, raggruppate per habitat.
+* **Regioni complete di Idyll**, **comandi/tasti**, **glossario** e **FAQ**.
 
 
 ---
@@ -112,5 +118,7 @@ Hai dubbi sull'installazione, vuoi segnalare un refuso o discutere delle strateg
 
 ## 📜 Note e Crediti
 * **Traduzione e revisione a cura di**: **SirBotolo (SirBotolo21)**.
-* **Guida ufficiale al gioco a cura di**: **SirBotolo (SirBotolo21)**.
+* **Guida di gioco** (`GUIDA_GIOCO.md`, 14 sezioni, verificata sui dati di gioco) a cura di: **SirBotolo (SirBotolo21)**.
 * Compatibile con la versione PC attuale di Aniimo.
+
+> ⚠️ **Sicurezza**: il file `publish_release.py` contiene token API in chiaro (`GH_TOKEN`, `NEXUS_API_KEY`). Ruotarli immediatamente dopo l'uso.
