@@ -98,6 +98,12 @@ All'interno del repository trovi il file **[`GUIDA_GIOCO.md`](GUIDA_GIOCO.md)**,
 
 ---
 
+## 💬 Community e Discussioni
+Hai dubbi sull'installazione, vuoi segnalare un refuso o discutere delle strategie di gioco?
+* Partecipa alla sezione ufficiale: **[GitHub Discussions](https://github.com/sirbotolos-crypto/Traduzione-Aniimo/discussions)**!
+
+---
+
 ## 📜 Note e Crediti
 * **Traduzione e revisione a cura di**: **SirBotolo** (sirbotolos-crypto).
 * **Guida ufficiale al gioco a cura di**: **SirBotolo**.
