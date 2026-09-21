@@ -1,3 +1,7 @@
+# File temporanei estratti dall'installer
+files/LuaScripts.xdf
 
+# Backup generati dallo script di fix
 files/*.bak*
 *.bak_pretranslation_fix
+
