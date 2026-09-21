@@ -1,12 +1,12 @@
 # ENCICLOPEDIA E GUIDA UFFICIALE COMPLETA DI ANIIMO (PC)
 ### La Guida Integrale a Tutti i 3 Tipi di Missioni, Trama Principale, Segreti Regionali, Addestramento Elite, Meccaniche e Formule
-**Ideazione, Traduzione e Redazione Esclusiva a cura di: SirBotolo (sirbotolos-crypto)**
+**Ideazione, Traduzione e Redazione Esclusiva a cura di: SirBotolo (SirBotolo21)**
 
 ---
 
 ## INTRODUZIONE GENERALE
 
-Benvenuto nell'enciclopedia completa e definitiva di **Aniimo**, redatta da **SirBotolo** attraverso l'analisi diretta e l'estrazione di tutti i file di dati, dialoghi, script di intelligenza artificiale, requisiti di missione e formule del motore di gioco.
+Benvenuto nell'enciclopedia completa e definitiva di **Aniimo**, redatta da **SirBotolo (SirBotolo21)** attraverso l'analisi diretta e l'estrazione di tutti i file di dati, dialoghi, script di intelligenza artificiale, requisiti di missione e formule del motore di gioco.
 
 Questa guida non è un semplice riassunto, ma il compendio totale strutturato specificamente attorno ai **3 rami ufficiali di missioni** previsti dal gioco, pensato per accompagnare il Pathfinder da semplice recluta ad Astra fino al dominio completo del continente di Idyll.
 
@@ -450,9 +450,9 @@ Nutrendo regolarmente l'ecosistema di una provincia (catturando Aniimo locali e 
 
 # 6. NOTE E CREDITI
 
-* **Traduzione, localizzazione italiana integrale e revisione riga per riga di tutte le 112.187 stringhe a cura di**: **SirBotolo** (`sirbotolos-crypto`).
-* **Stesura della Guida Ufficiale Completa (Trama, Missioni e Meccaniche) a cura di**: **SirBotolo**.
-* **Repository GitHub Ufficiale**: [https://github.com/sirbotolos-crypto/Traduzione-Aniimo](https://github.com/sirbotolos-crypto/Traduzione-Aniimo)
+* **Traduzione, localizzazione italiana integrale e revisione riga per riga di tutte le 112.187 stringhe a cura di**: **SirBotolo (SirBotolo21)**.
+* **Stesura della Guida Ufficiale Completa (Trama, Missioni e Meccaniche) a cura di**: **SirBotolo (SirBotolo21)**.
+* **Repository GitHub Ufficiale**: [https://github.com/SirBotolo21/Traduzione-Aniimo](https://github.com/SirBotolo21/Traduzione-Aniimo)
 * Compatibile al 100% con la versione PC attuale di **Aniimo**.
 
-*Buon viaggio su Idyll a tutti i Pathfinder italiani! Firmato: SirBotolo.*
+*Buon viaggio su Idyll a tutti i Pathfinder italiani! Firmato: SirBotolo (SirBotolo21).*
