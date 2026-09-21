@@ -1,0 +1,47 @@
+name: "⚙️ Problema Installazione o Tecnico"
+description: "Segnala un errore durante l'installazione, ripristino o mancato caricamento dei testi in italiano"
+title: "[Installazione]: "
+labels: ["installazione", "supporto"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Se riscontri difficoltà nell'installare la traduzione o nell'attivare la lingua francese/italiana in gioco, compila questo modulo.
+  - type: dropdown
+    id: system_os
+    attributes:
+      label: "Sistema Operativo"
+      options:
+        - "Windows 11 (64-bit)"
+        - "Windows 10 (64-bit)"
+        - "Altro / Steam Deck / Linux (Proton)"
+    validations:
+      required: true
+  - type: dropdown
+    id: step_failed
+    attributes:
+      label: "In quale passaggio si verifica il problema?"
+      options:
+        - "Esecuzione di Installa_Traduzione.bat"
+        - "Estrazione automatica dell'archivio LuaScripts.zip"
+        - "Il gioco parte ma i testi rimangono in francese/inglese"
+        - "Crash all'avvio del gioco dopo l'installazione"
+        - "Esecuzione di Ripristina_Originale.bat"
+        - "Altro"
+    validations:
+      required: true
+  - type: textarea
+    id: error_details
+    attributes:
+      label: "Descrizione del problema / Messaggio di errore"
+      description: "Incolla l'output della console o spiega esattamente cosa accade"
+      placeholder: "Es: Il file batch dice 'Percorso non valido' oppure..."
+    validations:
+      required: true
+  - type: input
+    id: game_path
+    attributes:
+      label: "Percorso di installazione di Aniimo"
+      placeholder: "Es: D:\\Giochi\\Aniimo o C:\\Program Files\\Aniimo"
+    validations:
+      required: false

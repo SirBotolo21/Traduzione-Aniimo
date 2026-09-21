@@ -1,0 +1,53 @@
+name: "🐛 Segnalazione Traduzione / Refuso"
+description: "Segnala un errore grammaticale, un testo non tradotto, o un tag errato nel gioco"
+title: "[Traduzione]: "
+labels: ["traduzione", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Grazie per aiutarci a migliorare la traduzione italiana di **Aniimo** curata da **SirBotolo**!
+        Compila i campi sottostanti per aiutarci a individuare e correggere rapidamente il testo.
+  - type: dropdown
+    id: category
+    attributes:
+      label: "Dove hai notato l'errore?"
+      options:
+        - "Dialogo di Storia / Missione Principale"
+        - "Missione Avventura / Voci del Mondo"
+        - "Addestramento Polaris / Missione Elite"
+        - "Descrizione Abilità / Statistiche Aniimo"
+        - "Interfaccia Utente (UI) / Menu / Impostazioni"
+        - "Schermata di caricamento / Suggerimenti"
+        - "Altro"
+    validations:
+      required: true
+  - type: input
+    id: location_quest
+    attributes:
+      label: "Nome Missione / Atto / Personaggio o Menu"
+      description: "Indica dove appare il testo (es. Atto 4, Twine, NPC Dr. Lewis, Menu Abilità di Ignifur, ecc.)"
+      placeholder: "Es: Atto 2 - Dialogo con Lewis prima del boss"
+    validations:
+      required: true
+  - type: textarea
+    id: current_text
+    attributes:
+      label: "Testo Attuale (con il refuso/errore)"
+      description: "Trascrivi o incolla il testo così come lo vedi a schermo"
+    validations:
+      required: true
+  - type: textarea
+    id: suggested_text
+    attributes:
+      label: "Testo Suggerito / Corretto"
+      description: "Come dovrebbe essere scritto secondo te?"
+    validations:
+      required: false
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: "Screenshot (Opzionale)"
+      description: "Trascina qui uno screenshot del gioco che mostra l'errore, se disponibile."
+    validations:
+      required: false

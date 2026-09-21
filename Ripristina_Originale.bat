@@ -19,6 +19,10 @@ if exist "%SCRIPT_DIR%game\Aniimo_Data" (
     set "GAME_DATA=%SCRIPT_DIR%game\Aniimo_Data"
 )
 
+if exist "%SCRIPT_DIR%Aniimo_Data" (
+    set "GAME_DATA=%SCRIPT_DIR%Aniimo_Data"
+)
+
 if "%GAME_DATA%"=="" (
     echo Cartella del gioco non rilevata automaticamente.
     echo Inserisci il percorso completo della cartella Aniimo_Data:

@@ -22,6 +22,11 @@ if exist "%SCRIPT_DIR%game\Aniimo_Data" (
     set "GAME_DATA=%SCRIPT_DIR%game\Aniimo_Data"
 )
 
+:: Controllo 3: Se lo script e' estratto direttamente nella cartella game/
+if exist "%SCRIPT_DIR%Aniimo_Data" (
+    set "GAME_DATA=%SCRIPT_DIR%Aniimo_Data"
+)
+
 :: Se non trovata automaticamente, chiedi all'utente
 if "%GAME_DATA%"=="" (
     echo Cartella del gioco non rilevata automaticamente.
@@ -52,6 +57,8 @@ if not exist "%BACKUP_DIR%" (
     if exist "%GAME_DATA%\cvs\res\lua\LuaScripts\Data\I18N\Compress_fr_FR.bin" (
         copy /y "%GAME_DATA%\cvs\res\lua\LuaScripts\Data\I18N\Compress_fr_FR.bin" "%BACKUP_DIR%\" >nul
     )
+)
+
 :: Decompressione di LuaScripts.zip se non ancora estratto
 if not exist "%FILES_DIR%\LuaScripts.xdf" (
     if exist "%FILES_DIR%\LuaScripts.zip" (
