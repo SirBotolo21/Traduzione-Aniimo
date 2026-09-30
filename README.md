@@ -8,7 +8,12 @@ Benvenuto nel progetto di **traduzione e revisione italiana completa** per il gi
 * 📦 **Download Diretto Release:** [GitHub Releases v1.0.0](https://github.com/SirBotolo21/Traduzione-Aniimo/releases/latest)
 * 🌐 **Scheda Mod su NexusMods:** [Traduzione Italiana Completa - Aniimo (Mod #5)](https://www.nexusmods.com/aniimo/mods/5)
 
-Questa patch sostituisce la lingua francese (`fr_FR`) integrando una localizzazione italiana integrale, accurata e revisionata riga per riga su tutte le **112.187 stringhe** del gioco, risolvendo bug grafici, tag corrotti e formule troncate dei vecchi adattamenti automatici.
+Questa patch sostituisce la lingua francese (`fr_FR`) integrando una localizzazione italiana integrale, accurata e revisionata riga per riga su tutte le **112.210 stringhe** del gioco (aggiornata alla patch **3616231**).
+
+> [!WARNING]
+> **🤖 Generazione tramite IA & ⚠️ Disclaimer di Responsabilità (Ban Risk):**
+> * **Generazione AI:** La presente traduzione e la documentazione allegata sono state elaborate e ottimizzate con l'ausilio di modelli di **Intelligenza Artificiale (AI)**.
+> * **Esonero da Responsabilità:** L'utilizzo di questa mod/traduzione avviene a **proprio rischio e pericolo**. Gli autori e i contributori **non si assumono alcuna responsabilità** in caso di ban, sanzioni, sospensioni dell'account o provvedimenti disciplinari presi dagli sviluppatori o gestori del gioco verso l'utente.
 
 ---
 
