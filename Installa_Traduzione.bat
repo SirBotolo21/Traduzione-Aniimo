@@ -8,18 +8,6 @@ cd /d "%~dp0"
 set "SCRIPT_DIR=%~dp0"
 set "FILES_DIR=%SCRIPT_DIR%files"
 
-:: Controllo elevazione permessi Amministratore
-net session >nul 2>&1
-if %errorlevel% neq 0 (
-    echo ================================================================
-    echo           TRADUZIONE ITALIANA PER ANIIMO (PC)
-    echo ================================================================
-    echo.
-    echo Richiesta permessi di Amministratore in corso...
-    powershell -Command "Start-Process cmd.exe -ArgumentList '/k ""%~f0""' -Verb RunAs" >nul 2>&1
-    exit /b
-)
-
 echo ================================================================
 echo           TRADUZIONE ITALIANA PER ANIIMO (PC)
 echo ================================================================
