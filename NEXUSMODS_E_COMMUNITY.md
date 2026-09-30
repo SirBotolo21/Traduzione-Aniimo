@@ -9,21 +9,25 @@
 🌟 **Traduzione Italiana Completa per Aniimo (PC)** 🌟
 *A cura di **SirBotolo***
 
-È finalmente disponibile la traduzione italiana integrale per **Aniimo**!
+È finalmente disponibile la traduzione italiana integrale per **Aniimo** aggiornata all'ultima patch **3616231**!
 Tutti i testi di gioco, dialoghi, missioni e interfaccia sono stati tradotti, revisionati e adattati per garantire la migliore esperienza possibile.
 
 ✨ **Caratteristiche Principali:**
-• 📜 Oltre 112.000 stringhe tradotte e verificate al 100%
+• 📜 Oltre 112.210 stringhe tradotte e verificate al 100% (Patch 3616231)
 • 🔍 Revisione completa di tag, formule e codici di gioco (zero anomalie grafiche)
-• ⚡ Installer automatico a 1-click con backup di sicurezza
+• ⚡ Installatore PowerShell nativo con supporto multi-disco (C:, D:, E:, ecc.) e selettore grafico GUI
 • 📘 Enciclopedia e Guida Completa inclusa (tutti i 10 Atti di Storia, le missioni Avventura/Voci del Mondo e l'Addestramento Polaris)
 
+🤖 **Generata con IA & ⚠️ Disclaimer Ban:**
+• Traduzione e documentazione elaborate ed ottimizzate con l'ausilio di tecnologie di Intelligenza Artificiale (AI).
+• L'uso della mod avviene a proprio rischio e pericolo: non ci assumiamo alcuna responsabilità per eventuali ban o sanzioni applicati dagli sviluppatori del gioco.
+
 📥 **Download & Installazione:**
-Scarica la release ufficiale v1.0.0 direttamente da GitHub:
+Scarica la release ufficiale v1.3.0 direttamente da GitHub:
 👉 https://github.com/SirBotolo21/Traduzione-Aniimo/releases/latest
 
 🛠️ **Come attivarla in gioco:**
-1. Estrai l'archivio ed esegui `Installa_Traduzione.bat`.
+1. Estrai l'archivio ZIP ed esegui `Installa_Traduzione.bat` o `Installa_Traduzione.ps1`.
 2. Apri Aniimo -> Impostazioni -> Lingua -> Seleziona **Français**.
 3. Tutto il gioco sarà ora in **Italiano**!
 
@@ -47,7 +51,11 @@ Vieni a trovarci nella sezione Discussioni:
 
 [size=5][b]DESCRIZIONE DEL PROGETTO[/b][/size]
 Questa mod introduce la [b]localizzazione italiana integrale[/b] per la versione PC di [i]Aniimo[/i], sostituendo lo slot linguistico francese ("Français").
-Il lavoro comprende una revisione capillare e il controllo di coerenza su oltre 112.000 righe di testo.
+Il lavoro comprende una revisione capillare e il controllo di coerenza su oltre 112.210 righe di testo aggiornate all'ultima patch [b]3616231[/b].
+
+[color=#ff9900][b]🤖 Generazione tramite IA & ⚠️ Disclaimer Ban:[/b][/color]
+La traduzione e la documentazione allegata sono state elaborate con l'ausilio di modelli di [b]Intelligenza Artificiale (AI)[/b].
+L'uso della mod avviene a [b]proprio rischio e pericolo[/b]: gli autori non si assumono alcuna responsabilità per eventuali ban, sanzioni o sospensioni dell'account da parte degli sviluppatori o gestori del gioco.
 
 [size=4][b]Cosa è stato tradotto e revisionato:[/b][/size]
 [list]
@@ -62,9 +70,9 @@ Il lavoro comprende una revisione capillare e il controllo di coerenza su oltre 
 
 [size=5][b]ISTRUZIONI DI INSTALLAZIONE[/b][/size]
 [list=1]
-[*] Scarica l'archivio [b]Traduzione_Italiana_Aniimo_v1.0.0.zip[/b].
-[*] Estrai l'archivio in una cartella a tuo piacimento.
-[*] Avvia con doppio clic [b]Installa_Traduzione.bat[/b] (verrà creato in automatico un backup dei file originali).
+[*] Scarica l'archivio [b]Traduzione_Italiana_Aniimo_v1.3.0.zip[/b].
+[*] Estrai l'archivio in una cartella a tuo piacimento (non eseguirlo da dentro il file .zip!).
+[*] Avvia con doppio clic [b]Installa_Traduzione.bat[/b] o [b]Installa_Traduzione.ps1[/b] (verrà aperto l'installatore PowerShell con selettore automatico e supporto a qualsiasi disco C:, D:, E:).
 [*] Avvia Aniimo, recati in [b]Impostazioni -> Lingua[/b] e imposta [b]Français[/b].
 [*] Buon divertimento su Idyll in italiano!
 [/list]
@@ -80,5 +88,6 @@ Per segnalare refusi, confrontarsi con altri giocatori o ricevere supporto:
 [url=https://github.com/SirBotolo21/Traduzione-Aniimo][b]Repository Ufficiale GitHub[/b][/url]
 
 [line]
-[i]Crediti: Ideazione, traduzione e guida a cura esclusiva di SirBotolo (SirBotolo21).[/i]
+
+[i]Crediti: Ideazione, traduzione e guida a cura di SirBotolo (SirBotolo21) con l'ausilio di IA.[/i]
 ```

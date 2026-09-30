@@ -1,7 +1,51 @@
-# File temporanei estratti dall'installer
+# ==========================================
+# IGNORE FILE NON NECESSARI - TRADUZIONE ANIIMO
+# ==========================================
+
+# File estratti ed elaborati dall'installer
 files/LuaScripts.xdf
+files/temp/*
+!files/temp/.gitkeep
 
-# Backup generati dallo script di fix
-files/*.bak*
-*.bak_pretranslation_fix
+# File di backup e temporanei
+*.bak
+*.bak*
+*.tmp
+*.temp
+*.log
+*.swp
+*.swo
 
+# Pacchetti ZIP di release (generati da publish_release.py)
+*.zip
+
+# Python cache ed eseguibili temporanei
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Editor & IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Sistema Operativo (Windows / macOS)
+Thumbs.db
+Desktop.ini
+desktop.ini
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Credenziali e dati sensibili
+*.env
+*.secret
+*.pem
+*.key
