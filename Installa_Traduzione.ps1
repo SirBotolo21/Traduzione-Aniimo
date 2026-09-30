@@ -44,30 +44,90 @@ if ($gameProcesses) {
     Start-Sleep -Seconds 1
 }
 
-# 3. Ricerca automatica della directory Aniimo_Data
+# 3. Ricerca automatica della directory Aniimo_Data su TUTTE le unita (C:, D:, E:, ecc.)
 $GameData = $null
 
-$candidates = @(
+# A. Controllo percorsi relativi rispetto allo script
+$localCandidates = @(
     (Join-Path $ScriptDir "..\Aniimo\game\Aniimo_Data"),
     (Join-Path $ScriptDir "game\Aniimo_Data"),
-    (Join-Path $ScriptDir "Aniimo_Data"),
-    "C:\Program Files\Aniimo\game\Aniimo_Data",
-    "C:\Games\Aniimo\game\Aniimo_Data",
-    "D:\PawPrint\Aniimo\game\Aniimo_Data"
+    (Join-Path $ScriptDir "Aniimo_Data")
 )
 
-foreach ($c in $candidates) {
-    if (Test-Path (Join-Path $c "cvs\res\lua")) {
-        $GameData = (Get-Item $c).FullName
+foreach ($lc in $localCandidates) {
+    if (Test-Path (Join-Path $lc "cvs\res\lua")) {
+        $GameData = (Get-Item $lc).FullName
         break
     }
 }
 
+# B. Scansione automatica di tutti i dischi fisici del sistema (C:\, D:\, E:\, ecc.)
 if (-not $GameData) {
-    Write-Host "Cartella del gioco non rilevata automaticamente." -ForegroundColor Yellow
-    $userInput = Read-Host "Inserisci il percorso completo della cartella Aniimo_Data"
-    if ($userInput -and (Test-Path (Join-Path $userInput "cvs\res\lua"))) {
-        $GameData = (Get-Item $userInput).FullName
+    $drives = Get-PSDrive -PSProvider FileSystem | Select-Object -ExpandProperty Root
+    foreach ($drive in $drives) {
+        $driveCandidates = @(
+            (Join-Path $drive "PawPrint\Aniimo\game\Aniimo_Data"),
+            (Join-Path $drive "Aniimo\game\Aniimo_Data"),
+            (Join-Path $drive "Games\Aniimo\game\Aniimo_Data"),
+            (Join-Path $drive "Program Files\Aniimo\game\Aniimo_Data"),
+            (Join-Path $drive "Program Files (x86)\Aniimo\game\Aniimo_Data"),
+            (Join-Path $drive "SteamLibrary\steamapps\common\Aniimo\game\Aniimo_Data"),
+            (Join-Path $drive "Epic Games\Aniimo\game\Aniimo_Data")
+        )
+        foreach ($c in $driveCandidates) {
+            if (Test-Path (Join-Path $c "cvs\res\lua")) {
+                $GameData = (Get-Item $c).FullName
+                break
+            }
+        }
+        if ($GameData) { break }
+    }
+}
+
+# 4. Se non trovata automaticamente, chiedi all'utente tramite Dialog GUI di selezione o Testo
+if (-not $GameData) {
+    Write-Host "Cartella di gioco non rilevata automaticamente nei percorsi standard." -ForegroundColor Yellow
+    Write-Host "Apertura finestra di selezione cartella..." -ForegroundColor Cyan
+    
+    # Tentativo popup Windows FolderBrowserDialog
+    try {
+        Add-Type -AssemblyName System.Windows.Forms -ErrorAction Stop
+        $dialog = New-Object System.Windows.Forms.FolderBrowserDialog
+        $dialog.Description = "Seleziona la cartella di Aniimo (es. Aniimo, game, oppure Aniimo_Data):"
+        $dialog.ShowNewFolderButton = $false
+        
+        $result = $dialog.ShowDialog()
+        if ($result -eq [System.Windows.Forms.DialogResult]::OK -and $dialog.SelectedPath) {
+            $selected = $dialog.SelectedPath
+            
+            # Normalizzazione automatica della cartella selezionata dall'utente
+            if (Test-Path (Join-Path $selected "cvs\res\lua")) {
+                $GameData = $selected
+            } elseif (Test-Path (Join-Path $selected "game\Aniimo_Data\cvs\res\lua")) {
+                $GameData = Join-Path $selected "game\Aniimo_Data"
+            } elseif (Test-Path (Join-Path $selected "Aniimo_Data\cvs\res\lua")) {
+                $GameData = Join-Path $selected "Aniimo_Data"
+            }
+        }
+    } catch {
+        # Fallback se le winforms non sono disponibili
+    }
+}
+
+# Fallback se l'utente ha annullato la dialog o preferisce la tastiera
+if (-not $GameData) {
+    Write-Host ""
+    Write-Host "Inserisci o trascina qui il percorso della cartella del gioco (su qualsiasi disco C:, D:, E:):" -ForegroundColor Yellow
+    $userInput = Read-Host "Percorso"
+    if ($userInput) {
+        $cleanPath = $userInput.Trim('"').Trim("'")
+        if (Test-Path (Join-Path $cleanPath "cvs\res\lua")) {
+            $GameData = (Get-Item $cleanPath).FullName
+        } elseif (Test-Path (Join-Path $cleanPath "game\Aniimo_Data\cvs\res\lua")) {
+            $GameData = (Get-Item (Join-Path $cleanPath "game\Aniimo_Data")).FullName
+        } elseif (Test-Path (Join-Path $cleanPath "Aniimo_Data\cvs\res\lua")) {
+            $GameData = (Get-Item (Join-Path $cleanPath "Aniimo_Data")).FullName
+        }
     }
 }
 
@@ -80,11 +140,11 @@ if (-not $GameData -or -not (Test-Path (Join-Path $GameData "cvs\res\lua"))) {
     exit 1
 }
 
-Write-Host "Cartella di gioco trovata: " -NoNewline -ForegroundColor Green
+Write-Host "Cartella di gioco confermata: " -NoNewline -ForegroundColor Green
 Write-Host "$GameData" -ForegroundColor White
 Write-Host ""
 
-# 4. Creazione backup preventivo
+# 5. Creazione backup preventivo
 $BackupDir = Join-Path $GameData "_backup_traduzione_originale"
 if (-not (Test-Path $BackupDir)) {
     New-Item -ItemType Directory -Path $BackupDir -Force | Out-Null
@@ -94,7 +154,7 @@ if (-not (Test-Path $BackupDir)) {
     if (Test-Path $origXdt) { Copy-Item -Path $origXdt -Destination $BackupDir -Force }
 }
 
-# 5. Decompressione LuaScripts.zip se necessario
+# 6. Decompressione LuaScripts.zip se necessario
 $xdfFile = Join-Path $FilesDir "LuaScripts.xdf"
 $zipFile = Join-Path $FilesDir "LuaScripts.zip"
 
@@ -109,7 +169,7 @@ if (-not (Test-Path $xdfFile)) {
     exit 1
 }
 
-# 6. Applicazione Traduzione Italiana
+# 7. Applicazione Traduzione Italiana
 Write-Host "Applicazione dei file di traduzione italiana..." -ForegroundColor Cyan
 
 $srcXdf = Join-Path $FilesDir "LuaScripts.xdf"
