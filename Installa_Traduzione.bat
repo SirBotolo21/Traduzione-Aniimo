@@ -1,16 +1,40 @@
 @echo off
 chcp 65001 >nul
 title Traduzione Italiana Aniimo - Installazione Automatica
+
+:: Imposta la directory di lavoro sul percorso dello script
+cd /d "%~dp0"
+
+set "SCRIPT_DIR=%~dp0"
+set "FILES_DIR=%SCRIPT_DIR%files"
+
 echo ================================================================
 echo           TRADUZIONE ITALIANA PER ANIIMO (PC)
 echo ================================================================
 echo.
 
-set "SCRIPT_DIR=%~dp0"
-set "FILES_DIR=%SCRIPT_DIR%files"
+:: Controllo 0: Verifica che lo ZIP sia stato estratto interamente
+if not exist "%FILES_DIR%" (
+    echo [ATTENZIONE / ERRORE]
+    echo La cartella "files" non e' stata trovata!
+    echo.
+    echo Assicurati di aver ESTRATTO L'INTERO ARCHIVIO ZIP in una cartella
+    echo prima di fare doppio clic su Installa_Traduzione.bat!
+    echo Non eseguire lo script direttamente da dentro il file .ZIP.
+    echo.
+    pause
+    exit /b 1
+)
+
+:: Richiesta permessi di Amministratore (se non gia' elevato)
+net session >nul 2>&1
+if %errorlevel% neq 0 (
+    powershell -Command "Start-Process '%~f0' -Verb RunAs" >nul 2>&1
+)
 
 :: Chiudi eventuali processi del gioco in esecuzione per sbloccare i file
 taskkill /f /im Aniimo.exe >nul 2>&1
+timeout /t 1 >nul 2>&1
 
 :: Ricerca automatica della directory di gioco Aniimo_Data
 set "GAME_DATA="
@@ -18,6 +42,8 @@ set "GAME_DATA="
 if exist "%SCRIPT_DIR%..\Aniimo\game\Aniimo_Data\cvs\res\lua" set "GAME_DATA=%SCRIPT_DIR%..\Aniimo\game\Aniimo_Data"
 if "%GAME_DATA%"=="" if exist "%SCRIPT_DIR%game\Aniimo_Data\cvs\res\lua" set "GAME_DATA=%SCRIPT_DIR%game\Aniimo_Data"
 if "%GAME_DATA%"=="" if exist "%SCRIPT_DIR%Aniimo_Data\cvs\res\lua" set "GAME_DATA=%SCRIPT_DIR%Aniimo_Data"
+if "%GAME_DATA%"=="" if exist "C:\Program Files\Aniimo\game\Aniimo_Data\cvs\res\lua" set "GAME_DATA=C:\Program Files\Aniimo\game\Aniimo_Data"
+if "%GAME_DATA%"=="" if exist "C:\Games\Aniimo\game\Aniimo_Data\cvs\res\lua" set "GAME_DATA=C:\Games\Aniimo\game\Aniimo_Data"
 
 if "%GAME_DATA%"=="" (
     echo Cartella del gioco non rilevata automaticamente.
@@ -63,11 +89,11 @@ if not exist "%FILES_DIR%\LuaScripts.xdf" (
 echo Applicazione dei file di traduzione italiana...
 
 :: 1. Applicazione in cvs/res/lua (directory attiva)
-copy /y "%FILES_DIR%\LuaScripts.xdf" "%GAME_DATA%\cvs\res\lua\LuaScripts.xdf" >nul
-copy /y "%FILES_DIR%\LuaScripts.xdt" "%GAME_DATA%\cvs\res\lua\LuaScripts.xdt" >nul
+copy /y "%FILES_DIR%\LuaScripts.xdf" "%GAME_DATA%\cvs\res\lua\LuaScripts.xdf" >nul 2>&1
+copy /y "%FILES_DIR%\LuaScripts.xdt" "%GAME_DATA%\cvs\res\lua\LuaScripts.xdt" >nul 2>&1
 
-if exist "%GAME_DATA%\cvs\res\lua\LuaScripts\Data\I18N" copy /y "%FILES_DIR%\Compress_fr_FR.bin" "%GAME_DATA%\cvs\res\lua\LuaScripts\Data\I18N\Compress_fr_FR.bin" >nul
-if exist "%GAME_DATA%\cvs\res\lua\LuaScripts\Data\I18N" copy /y "%FILES_DIR%\NewTextMap_fr_FR.json" "%GAME_DATA%\cvs\res\lua\LuaScripts\Data\I18N\NewTextMap_fr_FR.json" >nul
+if exist "%GAME_DATA%\cvs\res\lua\LuaScripts\Data\I18N" copy /y "%FILES_DIR%\Compress_fr_FR.bin" "%GAME_DATA%\cvs\res\lua\LuaScripts\Data\I18N\Compress_fr_FR.bin" >nul 2>&1
+if exist "%GAME_DATA%\cvs\res\lua\LuaScripts\Data\I18N" copy /y "%FILES_DIR%\NewTextMap_fr_FR.json" "%GAME_DATA%\cvs\res\lua\LuaScripts\Data\I18N\NewTextMap_fr_FR.json" >nul 2>&1
 
 :: 2. Ripristino di sicurezza StreamingAssets (per superare l'integrity check del motore)
 if exist "%BACKUP_DIR%\LuaScripts.xdf" copy /y "%BACKUP_DIR%\LuaScripts.xdf" "%GAME_DATA%\StreamingAssets\cvs\res\lua\LuaScripts.xdf" >nul 2>&1
@@ -78,10 +104,10 @@ if exist "%GAME_DATA%\StreamingAssets\cvs\res\lua\LuaScripts" rmdir /s /q "%GAME
 if exist "%GAME_DATA%\cvs\res\patchv2\lua\ver" (
     for /d %%D in ("%GAME_DATA%\cvs\res\patchv2\lua\ver\*") do (
         echo Aggiornamento versione patch: %%~nxD
-        copy /y "%FILES_DIR%\LuaScripts.xdf" "%%D\LuaScripts.xdf" >nul
-        copy /y "%FILES_DIR%\LuaScripts.xdt" "%%D\LuaScripts.xdt" >nul
-        if exist "%%D\LuaScripts\Data\I18N" copy /y "%FILES_DIR%\Compress_fr_FR.bin" "%%D\LuaScripts\Data\I18N\Compress_fr_FR.bin" >nul
-        if exist "%%D\LuaScripts\Data\I18N" copy /y "%FILES_DIR%\NewTextMap_fr_FR.json" "%%D\LuaScripts\Data\I18N\NewTextMap_fr_FR.json" >nul
+        copy /y "%FILES_DIR%\LuaScripts.xdf" "%%D\LuaScripts.xdf" >nul 2>&1
+        copy /y "%FILES_DIR%\LuaScripts.xdt" "%%D\LuaScripts.xdt" >nul 2>&1
+        if exist "%%D\LuaScripts\Data\I18N" copy /y "%FILES_DIR%\Compress_fr_FR.bin" "%%D\LuaScripts\Data\I18N\Compress_fr_FR.bin" >nul 2>&1
+        if exist "%%D\LuaScripts\Data\I18N" copy /y "%FILES_DIR%\NewTextMap_fr_FR.json" "%%D\LuaScripts\Data\I18N\NewTextMap_fr_FR.json" >nul 2>&1
     )
 )
 
