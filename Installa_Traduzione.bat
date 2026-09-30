@@ -8,6 +8,18 @@ cd /d "%~dp0"
 set "SCRIPT_DIR=%~dp0"
 set "FILES_DIR=%SCRIPT_DIR%files"
 
+:: Controllo elevazione permessi Amministratore
+net session >nul 2>&1
+if %errorlevel% neq 0 (
+    echo ================================================================
+    echo           TRADUZIONE ITALIANA PER ANIIMO (PC)
+    echo ================================================================
+    echo.
+    echo Richiesta permessi di Amministratore in corso...
+    powershell -Command "Start-Process cmd.exe -ArgumentList '/k ""%~f0""' -Verb RunAs" >nul 2>&1
+    exit /b
+)
+
 echo ================================================================
 echo           TRADUZIONE ITALIANA PER ANIIMO (PC)
 echo ================================================================
@@ -16,7 +28,8 @@ echo.
 :: Controllo 0: Verifica che lo ZIP sia stato estratto interamente
 if not exist "%FILES_DIR%" (
     echo [ATTENZIONE / ERRORE]
-    echo La cartella "files" non e' stata trovata!
+    echo La cartella "files" non e' stata trovata in:
+    echo "%SCRIPT_DIR%"
     echo.
     echo Assicurati di aver ESTRATTO L'INTERO ARCHIVIO ZIP in una cartella
     echo prima di fare doppio clic su Installa_Traduzione.bat!
@@ -24,12 +37,6 @@ if not exist "%FILES_DIR%" (
     echo.
     pause
     exit /b 1
-)
-
-:: Richiesta permessi di Amministratore (se non gia' elevato)
-net session >nul 2>&1
-if %errorlevel% neq 0 (
-    powershell -Command "Start-Process '%~f0' -Verb RunAs" >nul 2>&1
 )
 
 :: Chiudi eventuali processi del gioco in esecuzione per sbloccare i file
