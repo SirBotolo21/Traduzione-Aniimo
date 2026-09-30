@@ -5,7 +5,7 @@
 
 Benvenuto nel progetto di **traduzione e revisione italiana completa** per il gioco **Aniimo** (PC).
 
-* 📦 **Download Diretto Release:** [GitHub Releases v1.0.0](https://github.com/SirBotolo21/Traduzione-Aniimo/releases/latest)
+* 📦 **Download Diretto Release:** [GitHub Releases v1.3.0](https://github.com/SirBotolo21/Traduzione-Aniimo/releases/latest)
 * 🌐 **Scheda Mod su NexusMods:** [Traduzione Italiana Completa - Aniimo (Mod #5)](https://www.nexusmods.com/aniimo/mods/5)
 
 Questa patch sostituisce la lingua francese (`fr_FR`) integrando una localizzazione italiana integrale, accurata e revisionata riga per riga su tutte le **112.210 stringhe** del gioco (aggiornata alla patch **3616231**).
