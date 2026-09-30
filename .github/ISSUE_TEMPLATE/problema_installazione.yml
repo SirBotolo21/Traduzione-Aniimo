@@ -22,7 +22,7 @@ body:
     attributes:
       label: "In quale passaggio si verifica il problema?"
       options:
-        - "Esecuzione di Installa_Traduzione.bat"
+        - "Esecuzione di Installa_Traduzione.bat / Installa_Traduzione.ps1"
         - "Estrazione automatica dell'archivio LuaScripts.zip"
         - "Il gioco parte ma i testi rimangono in francese/inglese"
         - "Crash all'avvio del gioco dopo l'installazione"
