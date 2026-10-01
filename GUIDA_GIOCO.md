@@ -7,7 +7,7 @@
 > * **Generata con IA:** La traduzione di gioco e la presente enciclopedia/guida sono state elaborate, strutturate e ottimizzate con l'ausilio di tecnologie di **Intelligenza Artificiale (AI)** basandosi sui dati estratti dal gioco.
 > * **Esonero da Responsabilità:** L'uso di questa traduzione e delle relative mod avviene a **proprio rischio e pericolo**. Gli autori non si assumono **alcuna responsabilità** per eventuali ban, sanzioni, restrizioni o sospensioni dell'account applicati dagli sviluppatori o gestori del gioco.
 
-> **Nota di attendibilità:** questa guida è stata redatta e verificata estraendo direttamente i dati reali del gioco aggiornati alla patch **3616231** (112.210 stringhe di localizzazione, oltre 8.600 script del motore e tabelle di configurazione). Tutti i nomi di missioni, personaggi, creature e oggetti corrispondono esattamente alla versione italiana del gioco.
+> **Nota di attendibilità:** questa guida è stata redatta e verificata estraendo direttamente i dati reali del gioco aggiornati alla patch **3634150** (112.260 stringhe di localizzazione, oltre 8.600 script del motore e tabelle di configurazione). Tutti i nomi di missioni, personaggi, creature e oggetti corrispondono esattamente alla versione italiana del gioco.
 
 ---
 
@@ -572,7 +572,7 @@ Elenco delle principali famiglie confermate nel codice di gioco:
 
 # 14. NOTE E CREDITI
 
-* **Traduzione, localizzazione italiana integrale (112.210 stringhe) e revisione a cura di**: **SirBotolo (SirBotolo21)**.
+* **Traduzione, localizzazione italiana integrale (112.260 stringhe) e revisione a cura di**: **SirBotolo (SirBotolo21)**.
 * **Stesura dell'Enciclopedia e Guida Completa alle Missioni a cura di**: **SirBotolo (SirBotolo21)** (con l'ausilio di tecnologie di Intelligenza Artificiale).
 * **Repository GitHub Ufficiale**: [https://github.com/SirBotolo21/Traduzione-Aniimo](https://github.com/SirBotolo21/Traduzione-Aniimo)
 * **Scheda NexusMods Ufficiale**: [https://www.nexusmods.com/aniimo/mods/5](https://www.nexusmods.com/aniimo/mods/5)

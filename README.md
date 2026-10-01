@@ -5,10 +5,10 @@
 
 Benvenuto nel progetto di **traduzione e revisione italiana completa** per il gioco **Aniimo** (PC).
 
-* 📦 **Download Diretto Release:** [GitHub Releases v1.3.0](https://github.com/SirBotolo21/Traduzione-Aniimo/releases/latest)
+* 📦 **Download Diretto Release:** [GitHub Releases v1.4.0](https://github.com/SirBotolo21/Traduzione-Aniimo/releases/latest)
 * 🌐 **Scheda Mod su NexusMods:** [Traduzione Italiana Completa - Aniimo (Mod #5)](https://www.nexusmods.com/aniimo/mods/5)
 
-Questa patch sostituisce la lingua francese (`fr_FR`) integrando una localizzazione italiana integrale, accurata e revisionata riga per riga su tutte le **112.210 stringhe** del gioco (aggiornata alla patch **3616231**).
+Questa patch sostituisce la lingua francese (`fr_FR`) integrando una localizzazione italiana integrale, accurata e revisionata riga per riga su tutte le **112.260 stringhe** del gioco (aggiornata alla patch **3634150**).
 
 > [!WARNING]
 > **🤖 Generazione tramite IA & ⚠️ Disclaimer di Responsabilità (Ban Risk):**
@@ -19,7 +19,7 @@ Questa patch sostituisce la lingua francese (`fr_FR`) integrando una localizzazi
 
 ## 🌟 Caratteristiche Principali della Traduzione
 
-1. **Revisione Totale di 112.187 Stringhe**:
+1. **Revisione Totale di 112.260 Stringhe**:
    - Trama principale, dialoghi di tutti i capitoli e atti, missioni secondarie e incontri nel mondo interamente in italiano.
    - Eliminazione completa di frasi in inglese residue.
 2. **Pulsanti e Interfaccia di Gioco (UI)**:
@@ -101,7 +101,7 @@ Traduzione-Aniimo/
 ---
 
 ## 📖 Guida Completa al Gioco
-All'interno del repository trovi il file **[`GUIDA_GIOCO.md`](GUIDA_GIOCO.md)**, una guida completa e verificata direttamente sui dati di gioco (112.187 stringhe + 8.500 script Lua), ampliata a **14 sezioni**:
+All'interno del repository trovi il file **[`GUIDA_GIOCO.md`](GUIDA_GIOCO.md)**, una guida completa e verificata direttamente sui dati di gioco (112.260 stringhe + 8.500 script Lua), ampliata a **14 sezioni**:
 * **Guida Rapida** e sistema delle missioni (3 macro-tipi / 7 categorie reali).
 * **Walkthrough completa** degli 10 Atti di Storia con i titoli ufficiali estratti dal gioco.
 * **Missioni Avventura & Indizi**: tutte le regioni principali più Beast Fang Ridge, Nimbus Fields, White Plateau, Argent Strait.
